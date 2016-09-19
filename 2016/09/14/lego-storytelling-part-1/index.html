@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Бложик Начасик">
+    <title>Сторителлинг по&nbsp;принципу LEGO 1&nbsp;&mdash; Бложик Начасик</title>
+    <meta name="author" content="Ублюжок Начасик">
+
+        <meta name="keywords" content="сторителлинг,нарраторика,нарратив,повествование,квест,сценарий,игры,процедурная генерация,персонажи">
+
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
+
+    <meta name="description" content="Кен Левин
+Совсем недавно наткнулся на&amp;nbsp;выступление Кевина Левина на&amp;nbsp;GDC 2014 года &amp;laquo;Narrative Lego&amp;raquo;. 
+В&amp;nbsp;своем выступлении Кен рассказывал о&amp;nbsp;придуманной в&amp;nbsp;стенах студ">
+<meta property="og:type" content="blog">
+<meta property="og:title" content="Сторителлинг по принципу LEGO 1">
+<meta property="og:url" content="https://nachasic.gihub.io/2016/09/14/lego-storytelling-part-1/index.html">
+<meta property="og:site_name" content="Бложик Начасик">
+<meta property="og:description" content="Кен Левин
+Совсем недавно наткнулся на&amp;nbsp;выступление Кевина Левина на&amp;nbsp;GDC 2014 года &amp;laquo;Narrative Lego&amp;raquo;. 
+В&amp;nbsp;своем выступлении Кен рассказывал о&amp;nbsp;придуманной в&amp;nbsp;стенах студ">
+<meta property="og:image" content="https://res.cloudinary.com/nachasic/image/upload/c_thumb,g_custom:face,h_300,w_150/v1474043148/2581543-kenlevine__130618170314_zgqclg.jpg">
+<meta property="og:image" content="https://res.cloudinary.com/nachasic/image/upload/c_thumb,g_center,h_650,w_1920/v1474118158/Снимок_экрана_2016-09-17_в_16.14.26_hiig6u.png">
+<meta property="og:image" content="https://res.cloudinary.com/nachasic/image/upload/q_auto/v1474122202/parallax03_yacfkk.png">
+<meta property="og:image" content="https://res.cloudinary.com/nachasic/image/upload/c_scale,q_auto,w_900/v1474122841/Beast5_u1c7yc.jpg">
+<meta property="og:image" content="https://res.cloudinary.com/nachasic/image/upload/c_thumb,h_400,q_auto,w_1920/v1474136420/social-network-links_txtn05.png">
+<meta property="og:image" content="https://res.cloudinary.com/nachasic/image/upload/c_scale,w_900/v1474129810/semyon1.png">
+<meta property="og:updated_time" content="2016-09-19T16:41:53.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Сторителлинг по принципу LEGO 1">
+<meta name="twitter:description" content="Кен Левин
+Совсем недавно наткнулся на&amp;nbsp;выступление Кевина Левина на&amp;nbsp;GDC 2014 года &amp;laquo;Narrative Lego&amp;raquo;. 
+В&amp;nbsp;своем выступлении Кен рассказывал о&amp;nbsp;придуманной в&amp;nbsp;стенах студ">
+<meta name="twitter:image" content="https://res.cloudinary.com/nachasic/image/upload/c_thumb,g_custom:face,h_300,w_150/v1474043148/2581543-kenlevine__130618170314_zgqclg.jpg">
+
+        <meta property="og:image" content="https://nachasic.gihub.io/assets/images/avatar.png">
+
+        <meta property="og:image" content="https://res.cloudinary.com/nachasic/image/upload/c_thumb,e_blur:258,g_custom,h_150,w_900/v1474041069/29199600925_27ce17e76d_o_gbwkln.jpg">
+        <meta class="swiftype" name="image" data-type="enum" content="https://res.cloudinary.com/nachasic/image/upload/c_thumb,e_blur:258,g_custom,h_150,w_900/v1474041069/29199600925_27ce17e76d_o_gbwkln.jpg">
+
+        <meta property="og:image" content="https://res.cloudinary.com/nachasic/image/upload/c_scale,e_brightness:-10,q_auto,w_1920/v1474039511/29199600925_27ce17e76d_o_gbwkln.jpg">
+        <meta class="swiftype" name="image" data-type="enum" content="https://res.cloudinary.com/nachasic/image/upload/c_scale,e_brightness:-10,q_auto,w_1920/v1474039511/29199600925_27ce17e76d_o_gbwkln.jpg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/style-yeywirnyi6bkwr8xhop6r20gafbx5g3pcuvqitcyap9ncelv04b3k1qrfdll.min.css">
+    <!--STYLES END-->
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-84333754-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+</head>
+    <body>
+        <div id="blog">
+            <!-- Define author's picture -->
+
+<header id="header" data-behavior="4">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <div class="header-title">
+        <a class="header-title-link" href="/ ">Бложик Начасик</a>
+    </div>
+
+            <a class="header-right-icon open-algolia-search" href="#search">
+
+            <i class="fa fa-lg fa-search"></i>
+
+        </a>
+
+</header>
+            <!-- Define author's picture -->
+
+<nav id="sidebar" data-behavior="4">
+    <div class="sidebar-container">
+
+            <div class="sidebar-profile">
+                <a href="/#about">
+                    <img class="sidebar-profile-picture" src="/assets/images/avatar.png" alt="Author&#39;s picture">
+                </a>
+                <h4 class="sidebar-profile-name">Ублюжок Начасик</h4>
+
+                    <h5 class="sidebar-profile-bio"><p>Коллеги говорят, что я&nbsp;хороший программист. Друзья говорят, что я&nbsp;больной ублюдок. Родственники стараются обо мне не&nbsp;говорить. Для тебя, дорогой читатель, я&nbsp;просто кучка буковок и&nbsp;картинок на&nbsp;экране монитора. Это очень хорошо и&nbsp;необременяюще. Пусть так оно и&nbsp;будет.</p></h5>
+
+            </div>
+
+            <ul class="sidebar-buttons">
+
+                <li class="sidebar-button">
+
+                        <a class="sidebar-button-link " href="/ ">
+
+                        <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                        <span class="sidebar-button-desc">Главная</span>
+                    </a>
+            </li>
+
+                <li class="sidebar-button">
+
+                        <a class="sidebar-button-link " href="/all-categories">
+
+                        <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                        <span class="sidebar-button-desc">Разделы</span>
+                    </a>
+            </li>
+
+                <li class="sidebar-button">
+
+                        <a class="sidebar-button-link " href="/all-tags">
+
+                        <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                        <span class="sidebar-button-desc">Теги</span>
+                    </a>
+            </li>
+
+                <li class="sidebar-button">
+
+                        <a class="sidebar-button-link " href="/all-archives">
+
+                        <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+                        <span class="sidebar-button-desc">Архив</span>
+                    </a>
+            </li>
+
+                <li class="sidebar-button">
+
+                        <a class="sidebar-button-link open-algolia-search" href="#search">
+
+                        <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                        <span class="sidebar-button-desc">Поиск</span>
+                    </a>
+            </li>
+
+                <li class="sidebar-button">
+
+                        <a class="sidebar-button-link " href="#about">
+
+                        <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+                        <span class="sidebar-button-desc">Об&nbsp;авторе</span>
+                    </a>
+            </li>
+
+        </ul>
+
+            <ul class="sidebar-buttons">
+
+                <li class="sidebar-button">
+
+                        <a class="sidebar-button-link " href="https://twitter.com/nachasicFTW" target="_blank">
+
+                        <i class="sidebar-button-icon fa fa-lg fa-twitter"></i>
+                        <span class="sidebar-button-desc">Twitter</span>
+                    </a>
+            </li>
+
+                <li class="sidebar-button">
+
+                        <a class="sidebar-button-link " href="https://facebook.com/nachasic" target="_blank">
+
+                        <i class="sidebar-button-icon fa fa-lg fa-facebook"></i>
+                        <span class="sidebar-button-desc">Facebook</span>
+                    </a>
+            </li>
+
+                <li class="sidebar-button">
+
+                        <a class="sidebar-button-link " href="mailto:nachasic@gmail.com" target="_blank">
+
+                        <i class="sidebar-button-icon fa fa-lg fa-envelope-o"></i>
+                        <span class="sidebar-button-desc">Mail</span>
+                    </a>
+            </li>
+
+        </ul>
+
+            <ul class="sidebar-buttons">
+
+                <li class="sidebar-button">
+
+                        <a class="sidebar-button-link " href="/atom.xml">
+
+                        <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                        <span class="sidebar-button-desc">RSS</span>
+                    </a>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
+            <div class="post-header-cover
+                    text-left
+                    post-header-cover--partial" style="background-image:url('https://res.cloudinary.com/nachasic/image/upload/c_scale,e_brightness:-10,q_auto,w_1920/v1474039511/29199600925_27ce17e76d_o_gbwkln.jpg');" data-behavior="4">
+
+                <div class="post-header main-content-wrap text-left">
+
+        <h1 class="post-title" itemprop="headline">
+            Сторителлинг по&nbsp;принципу LEGO&nbsp;1
+        </h1>
+
+    <div class="post-meta">
+    <time itemprop="datePublished" datetime="2016-09-14T16:41:01+03:00">
+
+            14&nbsp;сентября 2016
+
+    </time>
+
+        <span> </span>
+        <a class="category-link" href="/categories/GameDev/">GameDev</a>
+
+</div>
+</div>
+
+        </div>
+            <div id="main" data-behavior="4" class="hasCover
+                        hasCoverMetaIn
+                        ">
+                <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content markdown" itemprop="articleBody">
+        <div class="main-content-wrap">
+            <div class="figure fig-25" style="width:;"><a class="fancybox" href="https://res.cloudinary.com/nachasic/image/upload/v1474043148/2581543-kenlevine__130618170314_zgqclg.jpg" title="Кен Левин" data-fancybox-group="" target="_blank" rel="external"><img class="fig-img" src="https://res.cloudinary.com/nachasic/image/upload/c_thumb,g_custom:face,h_300,w_150/v1474043148/2581543-kenlevine__130618170314_zgqclg.jpg" alt="Кен Левин"></a><span class="caption">Кен Левин</span></div>
+<p>Совсем недавно наткнулся на&nbsp;выступление Кевина Левина на&nbsp;GDC 2014 года &laquo;Narrative Lego&raquo;. </p>
+<p>В&nbsp;своем выступлении Кен рассказывал о&nbsp;придуманной в&nbsp;стенах студии Irrational Games системе, создающей интерактивное повествование в&nbsp;играх со&nbsp;множеством персонажей и&nbsp;второстепенных сюжетов, основываясь только лишь на&nbsp;действиях игрока, в&nbsp;противовес более традиционным техникам линейного повествования. </p>
+<p>Несмотря на&nbsp;то, что все известные игры, вышедшие из-под руки Кена полностью линейны, а&nbsp;сюжет в&nbsp;них подается в&nbsp;строго определенном сценаристами порядке, идеи, предложенные им, звучат очень интересно. В&nbsp;этом посте будет моя вольная интерпретация его выступления вперемешку с&nbsp;собственными мыслями. ОЧЕНЬ ДЛИННЫЙ ПОСТ&nbsp;&mdash; <a href="/2016/09/16/lego-storytelling-part-2/">даже продолжение есть</a>, будьте осторожны.<a id="more"></a></p>
+<p>Кто не&nbsp;знает:<br><blockquote><p><strong>Кен Левин</strong> (англ. Ken Levine, родился 1&nbsp;сентября 1966 года)&nbsp;&mdash; американский геймдизайнер, творческий директор и&nbsp;один из&nbsp;основателей компании <a href="https://ru.wikipedia.org/wiki/Irrational_Games" target="_blank" rel="external">Irrational Games</a>. Левин известен прежде всего как создатель компьютерных игр <a href="https://ru.wikipedia.org/wiki/BioShock" target="_blank" rel="external">BioShock</a>, <a href="https://ru.wikipedia.org/wiki/Thief:_The_Dark_Project" target="_blank" rel="external">Thief: The Dark Project</a> и&nbsp;<a href="https://ru.wikipedia.org/wiki/System_Shock_2" target="_blank" rel="external">System Shock 2</a>.</p><footer><strong>Педивикия</strong><cite><a href="http://www.wikiwand.com/ru/%D0%9B%D0%B5%D0%B2%D0%B8%D0%BD,_%D0%9A%D0%B5%D0%BD" target="_blank" rel="external">Кен Левин</a></cite></footer></blockquote><br>Само выступление можно посмотреть на&nbsp;<a href="https://www.youtube.com/channel/UC0JB7TSe49lg56u6qH8y_MQ" target="_blank" rel="external">официальном канале GDC</a>:<br><div class="video-container"><iframe src="//www.youtube.com/embed/p40p0AVUH70" frameborder="0" allowfullscreen></iframe></div></p>
+</div><div class="figure figure--fullWidth"><img class="figure-img" src="https://res.cloudinary.com/nachasic/image/upload/c_thumb,g_center,h_650,w_1920/v1474118158/Снимок_экрана_2016-09-17_в_16.14.26_hiig6u.png" alt="Типа история с ветвлением?? ХЗ ваще на самом деле"><span class="caption">Типа история с&nbsp;ветвлением? ХЗ&nbsp;ваще на&nbsp;самом деле</span></div><div class="main-content-wrap">
+<h3 id="Линейные-повествования-несовершенны"><a href="#Линейные-повествования-несовершенны" class="headerlink" title="Линейные повествования несовершенны"></a>Линейные повествования несовершенны</h3><p>Начал свое выступление Кен с&nbsp;краткой критики традиционного линейного повествования и&nbsp;его реализаций в&nbsp;играх.</p>
+<p>Линейное повествование&nbsp;&mdash; древнейшая форма рассказанной истории, отлично зарекомендовала себя в&nbsp;литературе, театре и&nbsp;кино. Однако в&nbsp;играх начинают проявляться некоторые ее&nbsp;недостатки.</p>
+<p>В&nbsp;частности, в&nbsp;линейном повествовании очень непросто реализовать сложное ветвление сюжетов. Каждый раз, когда мы&nbsp;хотим предоставить игроку возможность влиять на&nbsp;ход сюжета, мы&nbsp;создаем вилку альтернативных вариантов, каждый из&nbsp;которых приходится прописывать отдельно и&nbsp;полностью. Это значит, что хоть разнообразные сюжеты и&nbsp;реализуемы, их&nbsp;количество будет строго ограничено количеством таких веток, а&nbsp;интерактивность такого повествования будет заключена лишь в&nbsp;серии ключевых выборов.</p>
+<p>Самый вопиющий недостаток классических линейных историй в&nbsp;играх: в&nbsp;большинстве случаев они игнорируют главную особенность игры как художественной формы&nbsp;&mdash; интерактивность. Части истории не&nbsp;способны влиять друг на&nbsp;друга сами по&nbsp;себе, история не&nbsp;реагирует на&nbsp;поведение игрока на&nbsp;низком уровне. Короче говоря, </p>
+<div class="alert info"><p>Линейное повествование не&nbsp;является игровой механикой</p></div>
+<p>Кроме этих, в&nbsp;классических сюжетах есть еще несколько недостатков:</p>
+<ul>
+<li>они дороги в&nbsp;производстве;</li>
+<li>множества концовок все еще зависят от&nbsp;крайне ограниченного набора состояний;</li>
+<li>уже состоявшийся сюжет невозможно дополнить&nbsp;&mdash; его можно только продолжить;</li>
+<li>существует множество примеров хорошей реализации линейного сюжета в&nbsp;игре, однако играм уже давно нужен новый подход.</li>
+</ul>
+</div><div class="figure figure--fullWidth"><img class="figure-img" src="https://res.cloudinary.com/nachasic/image/upload/q_auto/v1474122202/parallax03_yacfkk.png" alt="Ancient Domains of Mystery - полностью процедурно-генерируемый roguelike"><span class="caption">Ancient Domains of&nbsp;Mystery&nbsp;&mdash; полностью процедурно-генерируемый roguelike</span></div><div class="main-content-wrap">
+<h3 id="Процедурная-генерация-тупик"><a href="#Процедурная-генерация-тупик" class="headerlink" title="Процедурная генерация - тупик"></a>Процедурная генерация&nbsp;&mdash; тупик</h3><p>Примеров удачной и&nbsp;популярной процедурной генерации квестов, сюжетов и&nbsp;персонажей не&nbsp;так уж&nbsp;и&nbsp;много. Главным образом, это связано с&nbsp;тем, что почти в&nbsp;каждом из&nbsp;таких примеров работу сценариста целиком перекладывают на&nbsp;<abbr title="Искусственного Идиота">ИИ</abbr>. </p>
+<p>Кен не&nbsp;рассматривал в&nbsp;своей речи такие игры, как <a href="http://www.wikiwand.com/ru/Slaves_to_Armok_II:_Dwarf_Fortress" target="_blank" rel="external">Dwarf Fortress</a> или <a href="http://www.wikiwand.com/ru/Ancient_Domains_of_Mystery" target="_blank" rel="external">Ancient Domains of&nbsp;Mystery</a>, вероятно, потому, что хоть сюжеты с&nbsp;персонажами и&nbsp;генерируются там на&nbsp;ходу, и&nbsp;даже сами становятся игровой механикой, их&nbsp;выразительные качества серьезно уступают классическим сюжетам, написанным живыми авторами.</p>
+<p>Проблема кроется в&nbsp;традиционном подходе к&nbsp;написанию <abbr title="Искусственного Идиота">ИИ</abbr>:</p>
+<ul>
+<li>технический подход часто направлен на&nbsp;симуляцию человека, а&nbsp;не&nbsp;персонажа;</li>
+<li>симулировать живого человека даже в&nbsp;рамках игры&nbsp;&mdash; чрезвычайно трудная задача, мало у&nbsp;кого это получается достаточно хорошо;</li>
+<li>по-настоящему мощные реализации в&nbsp;наше время почти недостижимы;</li>
+<li>излишняя амбициозность проекта может привести к&nbsp;параличу.</li>
+</ul>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="https://res.cloudinary.com/nachasic/image/upload/c_scale,q_auto,w_1200/v1474122841/Beast5_u1c7yc.jpg" title="Процедурный болван из No Man's Sky не понимает, зачем он здесь" data-fancybox-group="screenshots" target="_blank" rel="external"><img class="fig-img" src="https://res.cloudinary.com/nachasic/image/upload/c_scale,q_auto,w_900/v1474122841/Beast5_u1c7yc.jpg" alt="Процедурный болван из No Man's Sky не понимает, зачем он здесь"></a><span class="caption">Процедурный болван из&nbsp;No&nbsp;Manʼs Sky не&nbsp;понимает, зачем он&nbsp;здесь</span></div>
+<p>Еще меньше успешных примеров гармоничного сочетания процедурной генерации с&nbsp;профессионально-написанными сценариями, несмотря на&nbsp;то, что такой подход вполне может быть самым перспективным. </p>
+<p>Разумеется, выбрав его, разработчик рискует столкнуться с&nbsp;рядом технических сложностей, однако, это не&nbsp;должно стать существенной преградой. Превращение написанного автором-человеком сценария в&nbsp;игровую механику&nbsp;&mdash; процесс очень похожий на&nbsp;становление другой важной механики в&nbsp;индустрии&nbsp;&mdash; физических симуляций.</p>
+<p>Совершенно очевидно, что в&nbsp;играх далеко не&nbsp;сразу появилась продвинутая физика, какую мы&nbsp;видим сейчас: когда-то игры не&nbsp;умели симулировать поведение жидкостей, частиц или тканей. Все началось с&nbsp;простых экспериментов по&nbsp;столкновению твердых коробок в&nbsp;виртуальном пространстве&nbsp;&mdash; этого тогда уже было вполне достаточно, чтобы изумить игрока. Разумеется, все видели поведение подобных объектов в&nbsp;реальном мире и&nbsp;представляли себе все несовершенство ранних технологий, но&nbsp;это понимание не&nbsp;мешало людям получать удовольствие от&nbsp;игры.</p>
+<p>И&nbsp;развиваясь, мало-помалу наращивая достоверность и&nbsp;выразительное богатство, игровая физика достигла того уровня развития, на&nbsp;котором пребывает сейчас. Возможно, подобный подход поможет и&nbsp;в&nbsp;создании интерактивных игровых сюжетов.</p>
+</div><div class="figure figure--fullWidth"><img class="figure-img" src="https://res.cloudinary.com/nachasic/image/upload/c_thumb,h_400,q_auto,w_1920/v1474136420/social-network-links_txtn05.png" alt=""><span class="caption"></span></div><div class="main-content-wrap">
+<h3 id="Новая-методология"><a href="#Новая-методология" class="headerlink" title="Новая методология"></a>Новая методология</h3><p>Таким образом, можно попробовать суммировать положительные качества как традиционных линейных, так и&nbsp;процедурных повествований, чтобы представить себе некую супер-крутую систему, в&nbsp;которой:</p>
+<ul>
+<li>нарративные элементы взаимодействуют друг с&nbsp;другом;</li>
+<li>новые нарративные элементы порождаются непосредственно действиями игрока;</li>
+<li>процесс появления нового сюжета и&nbsp;триггеры, которые его запускают абсолютно <em>прозрачны</em> по&nbsp;отношению к&nbsp;игроку.</li>
+</ul>
+<p>Стоит отметить, что все, о&nbsp;чем здесь идет речь&nbsp;&mdash; не&nbsp;больше, чем мысленный эксперимент Кевина. Он&nbsp;сам не&nbsp;занимался техническими реализациями того, что предлагает, и&nbsp;Irrational Games на&nbsp;момент выступления тоже ни&nbsp;над чем подобным не&nbsp;работали.</p>
+<h4 id="Основные-понятия"><a href="#Основные-понятия" class="headerlink" title="Основные понятия"></a>Основные понятия</h4><p>Левин вводит несколько новых понятий, начиная с&nbsp;особого класса <abbr title="Non-Playable Character, неиграбельный персонаж">NPC</abbr>, имеющего в&nbsp;повествовании особый вес:</p>
+<dl><br> <dt>Звезда (star)</dt><dd>Персонаж, важный для&nbsp;истории и&nbsp;способный на&nbsp;нее влиять. У&nbsp;каждой звезды есть&nbsp;<strong>страсть</strong>.</dd><br> <dt>Страсть (passion)</dt><dd>Нечто, глубоко волнующее звезду, на&nbsp;что игрок может повлиять. Таким образом, страсть становится неким параметром звезды, зависящем от&nbsp;поведения игрока, и&nbsp;влияющим на&nbsp;поведение звезды.</dd><br> <dt>Порог (threshold)</dt><dd>Некая степень влияния игрока на&nbsp;страсть звезды, по&nbsp;достижению которой звезда начинает вести себя по-другому.</dd><br> <dt>Макрострасть (macro-passion)</dt><dd>Шкала, обозначающее общее отношение звезды к&nbsp;действиям игрока. Является некоей функцией от&nbsp;страстей.</dd><br> <dt>Дроны (drones)</dt><dd>Обычные NPC, которые, не&nbsp;имея собственных страстей, разделяют макрострасть своей звезды. Толпа, следующая за&nbsp;лидером</dd><br></dl>
+
+<p>Таким образом, можно получить нашу типичную фентезийную звезду:<br><div class="figure fig-100" style="width:;"><a class="fancybox" href="https://res.cloudinary.com/nachasic/image/upload/v1474129810/semyon1.png" title="Семен Суперстар" data-fancybox-group="diagrams" target="_blank" rel="external"><img class="fig-img" src="https://res.cloudinary.com/nachasic/image/upload/c_scale,w_900/v1474129810/semyon1.png" alt="Семен Суперстар"></a><span class="caption">Семен Суперстар</span></div><br>А&nbsp;вокруг нашего Семена (ну&nbsp;раз он&nbsp;уж&nbsp;вождь) вращается толпа орков поменьше, которые, в&nbsp;среднем, настроены по&nbsp;отношению к&nbsp;игроку так&nbsp;же, как и&nbsp;он.</p>
+<p>Игра регистрирует действия игрока, способные повлиять на&nbsp;страсти звезды и&nbsp;соответствующим образом обновляет их&nbsp;состояние. Должно получится нечто похожее на&nbsp;все известные кармические системы (например, как в&nbsp;<a href="http://www.wikiwand.com/ru/Star_Wars:_Knights_of_the_Old_Republic" target="_blank" rel="external">Star Wars: KoTOR</a>), только теперь шкала живет не&nbsp;в&nbsp;главном герое, а&nbsp;NPC, и&nbsp;у&nbsp;каждого их&nbsp;может быть несколько.</p>
+<p>Таким образом, мы&nbsp;можем подружиться с&nbsp;Семеном, если зарубим много женоподобных эльфов и&nbsp;достаточно активно поможем ему, например в&nbsp;строительстве его храма. А&nbsp;еще мы&nbsp;можем его очень обидеть, подружившись с&nbsp;эльфами, или, например, поделив на&nbsp;0 его любимую Людочку. Все зависит от&nbsp;того, начислят&nbsp;ли наши действия достаточно положительных или отрицательных очков в&nbsp;шкалу его <strong>страсти</strong>, чтобы шкала его <strong>макрострасти</strong> преодолела определенный <strong>порог</strong>, и&nbsp;Семен стал&nbsp;бы относиться к&nbsp;нам по-другому.</p>
+<p>Относясь к&nbsp;нам хорошо, Семен может давать бонусы: например, будучи вождем, он&nbsp;может познакомить нас с&nbsp;другими <strong>звездами</strong> или даже подарить шмотку. Если&nbsp;же мы&nbsp;его сильно разозлим, но&nbsp;прикажет дронам нас убить, например.</p>
+<p>В&nbsp;своей речи Кен Левин показал небольшую сводную таблицу ключевых действий игрока, возможных поощрений и&nbsp;наказаний со&nbsp;стороны персонажей:</p>
+<table>
+<thead>
+<tr>
+<th>Достижения</th>
+<th>Награды</th>
+<th>Наказания</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>убить X</td>
+<td>изменение цен</td>
+<td>изменение цен</td>
+</tr>
+<tr>
+<td>спасти X</td>
+<td>помощь в&nbsp;бою</td>
+<td>засада</td>
+</tr>
+<tr>
+<td>собрать X</td>
+<td>ресурсы</td>
+<td>эмбарго</td>
+</tr>
+<tr>
+<td>создать X</td>
+<td>баффы</td>
+<td>дебаффы</td>
+</tr>
+<tr>
+<td>найти X</td>
+<td>слухи (о&nbsp;новой страсти)</td>
+<td>нападение на&nbsp;собственность</td>
+</tr>
+<tr>
+<td>уничтожить X</td>
+<td>одолжить эквип</td>
+<td>враждебные дроны</td>
+</tr>
+<tr>
+<td>поклониться X</td>
+<td>отдать эквип</td>
+<td>слухи (о&nbsp;новой страсти)</td>
+</tr>
+<tr>
+<td>разозлить X</td>
+<td>поддержка дронами</td>
+<td></td>
+</tr>
+<tr>
+<td>ублажить X</td>
+<td>появление новых звезд</td>
+<td></td>
+</tr>
+<tr>
+<td>мини-игры</td>
+<td>влияние на&nbsp;враждебных звезд</td>
+<td></td>
+</tr>
+<tr>
+<td>другие ачивки</td>
+</tr>
+</tbody>
+</table>
+<p><a href="/2016/09/16/lego-storytelling-part-2/">Продолжение следует&hellip;</a></p>
+
+        </div>
+    </div>
+    <div id="post-footer" class="post-footer main-content-wrap">
+
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">Теги: </span><br>
+                <a class="tag tag--primary tag--small t-link" href="/tags/GDC/">GDC</a> <a class="tag tag--primary tag--small t-link" href="/tags/игры/">игры</a> <a class="tag tag--primary tag--small t-link" href="/tags/конспекты/">конспекты</a> <a class="tag tag--primary tag--small t-link" href="/tags/сторителлинг/">сторителлинг</a>
+            </div>
+
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/09/16/lego-storytelling-part-2/" data-tooltip="Сторителлинг по принципу LEGO 2">
+
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">Пред.</span>
+                </a>
+            </li>
+            <li class="post-action">
+
+                    <a class="post-action-btn btn btn--disabled">
+
+                    <span class="hide-xs hide-sm text-small icon-mr">След.</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://nachasic.gihub.io/2016/09/14/lego-storytelling-part-1/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://nachasic.gihub.io/2016/09/14/lego-storytelling-part-1/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://nachasic.gihub.io/2016/09/14/lego-storytelling-part-1/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+
+            <li class="post-action">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+
+        <li class="post-action">
+
+                <a class="post-action-btn btn btn--default" href="#">
+
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+                <div id="disqus_thread">
+    <noscript>Please enable JavaScript to&nbsp;view the <a href="//disqus.com/?ref_noscript">comments powered by&nbsp;Disqus.</a></noscript>
+</div>
+
+    </div>
+</article>
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2016 Ублюжок Начасик. All Rights Reserved.
+    </span>
+</footer>
+            </div>
+
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/09/16/lego-storytelling-part-2/" data-tooltip="Сторителлинг по принципу LEGO 2">
+
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">Пред.</span>
+                </a>
+            </li>
+            <li class="post-action">
+
+                    <a class="post-action-btn btn btn--disabled">
+
+                    <span class="hide-xs hide-sm text-small icon-mr">След.</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://nachasic.gihub.io/2016/09/14/lego-storytelling-part-1/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://nachasic.gihub.io/2016/09/14/lego-storytelling-part-1/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://nachasic.gihub.io/2016/09/14/lego-storytelling-part-1/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+
+            <li class="post-action">
+                <a class="post-action-btn btn btn--default" href="#disqus_thread">
+                    <i class="fa fa-comment-o"></i>
+                </a>
+            </li>
+
+        <li class="post-action">
+
+                <a class="post-action-btn btn btn--default" href="#">
+
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+                </div>
+                <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+    <ul class="share-options">
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://nachasic.gihub.io/2016/09/14/lego-storytelling-part-1/">
+                <i class="fa fa-google-plus"></i><span>Поделиться в&nbsp;Google Plus</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://nachasic.gihub.io/2016/09/14/lego-storytelling-part-1/">
+                <i class="fa fa-facebook-official"></i><span>Поделиться в&nbsp;Facebook</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://nachasic.gihub.io/2016/09/14/lego-storytelling-part-1/">
+                <i class="fa fa-twitter"></i><span>Поделиться в&nbsp;Twitter</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+        </div>
+        <div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+
+            <img id="about-card-picture" src="/assets/images/avatar.png" alt="Author&#39;s picture">
+
+            <h4 id="about-card-name">Ублюжок Начасик</h4>
+
+            <div id="about-card-bio"><p>Коллеги говорят, что я&nbsp;хороший программист. Друзья говорят, что я&nbsp;больной ублюдок. Родственники стараются обо мне не&nbsp;говорить. Для тебя, дорогой читатель, я&nbsp;просто кучка буковок и&nbsp;картинок на&nbsp;экране монитора. Это очень хорошо и&nbsp;необременяюще. Пусть так оно и&nbsp;будет.</p></div>
+
+            <div id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br>
+                <p>front-end developer</p>
+            </div>
+
+            <div id="about-card-location">
+                <i class="fa fa-map-marker"></i>
+                <br>
+                Восточный Мордор
+            </div>
+
+    </div>
+</div>
+        <div id="algolia-search-modal" class="modal-container">
+    <div class="modal">
+        <div class="modal-header">
+            <span class="close-button"><i class="fa fa-close"></i></span>
+            <a href="https://algolia.com" target="_blank" class="searchby-algolia text-color-light link-unstyled">
+                <span class="searchby-algolia-text text-color-light text-small">by</span>
+                <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+            </a>
+            <i class="search-icon fa fa-search"></i>
+            <form id="algolia-search-form">
+                <input type="text" id="algolia-search-input" name="search" class="form-control input--large search-input" placeholder="Search " autofocus="autofocus">
+            </form>
+        </div>
+        <div class="modal-body">
+            <div class="no-result text-color-light text-center">Статей не&nbsp;найдено</div>
+            <div class="results">
+
+                <div class="media">
+
+                    <div class="media-left">
+                        <a class="link-unstyled" href="https://nachasic.gihub.io/2016/09/14/lego-storytelling-part-1/">
+                            <img class="media-image" src="https://res.cloudinary.com/nachasic/image/upload/c_thumb,e_blur:258,g_custom,h_150,w_900/v1474041069/29199600925_27ce17e76d_o_gbwkln.jpg" width="90" height="90">
+                        </a>
+                    </div>
+
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://nachasic.gihub.io/2016/09/14/lego-storytelling-part-1/">
+                            <h3 class="media-heading">Сторителлинг по&nbsp;принципу LEGO 1</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+
+                                    14&nbsp;сент. 2016&nbsp;г.
+
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><div class="figure fig-25" style="width:;"><a class="fancybox" href="https://res.cloudinary.com/nachasic/image/upload/v1474043148/2581543-kenlevine__130618170314_zgqclg.jpg" title="Кен Левин" data-fancybox-group=""><img class="fig-img" src="https://res.cloudinary.com/nachasic/image/upload/c_thumb,g_custom:face,h_300,w_150/v1474043148/2581543-kenlevine__130618170314_zgqclg.jpg" alt="Кен Левин"></a><span class="caption">Кен Левин</span></div>
+<p>Совсем недавно наткнулся на&nbsp;выступление Кевина Левина на&nbsp;GDC 2014 года &laquo;Narrative Lego&raquo;. </p>
+<p>В&nbsp;своем выступлении Кен рассказывал о&nbsp;придуманной в&nbsp;стенах студии Irrational Games системе, создающей интерактивное повествование в&nbsp;играх со&nbsp;множеством персонажей и&nbsp;второстепенных сюжетов, основываясь только лишь на&nbsp;действиях игрока, в&nbsp;противовес более традиционным техникам линейного повествования. </p>
+<p>Несмотря на&nbsp;то, что все известные игры, вышедшие из-под руки Кена полностью линейны, а&nbsp;сюжет в&nbsp;них подается в&nbsp;строго определенном сценаристами порядке, идеи, предложенные им, звучат очень интересно. В&nbsp;этом посте будет моя вольная интерпретация его выступления вперемешку с&nbsp;собственными мыслями. ОЧЕНЬ ДЛИННЫЙ ПОСТ&nbsp;&mdash; <a href="/2016/09/16/lego-storytelling-part-2/">даже продолжение есть</a>, будьте осторожны.</p></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+
+                <div class="media">
+
+                    <div class="media-left">
+                        <a class="link-unstyled" href="https://nachasic.gihub.io/2016/09/16/lego-storytelling-part-2/">
+                            <img class="media-image" src="https://res.cloudinary.com/nachasic/image/upload/c_thumb,e_blur:258,g_custom,h_150,w_900/v1474041069/29199600925_27ce17e76d_o_gbwkln.jpg" width="90" height="90">
+                        </a>
+                    </div>
+
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://nachasic.gihub.io/2016/09/16/lego-storytelling-part-2/">
+                            <h3 class="media-heading">Сторителлинг по&nbsp;принципу LEGO 2</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+
+                                    16&nbsp;сент. 2016&nbsp;г.
+
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p>Продолжаем <a href="/2016/09/14/lego-storytelling-part-1/">длиннейший пост</a> про выступление Кевина Левина на&nbsp;GDC 2014 года, где он&nbsp;рассказывал о&nbsp;придуманной им&nbsp;системе динамического сторителлинга в&nbsp;играх.</p></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+
+                <div class="media">
+
+                    <div class="media-body">
+                        <a class="link-unstyled" href="https://nachasic.gihub.io/2016/09/19/math/">
+                            <h3 class="media-heading">Прокачиваем бложек</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+
+                                    19&nbsp;сент. 2016&nbsp;г.
+
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p>Сегодня сделал несколько важных первых изменений во&nbsp;внешнем виде бложичка: подправил кое-что по&nbsp;типографике и&nbsp;включил рендеринг математических формул, как вот такая, например:<span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msubsup><mo>&sum;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></msubsup><mfrac><mrow><msup><mi>f</mi><mrow><mo>(</mo><mi>k</mi><mo>)</mo></mrow></msup><mo>(</mo><mi>a</mi><mo>)</mo></mrow><mrow><mi>k</mi><mo>!</mo></mrow></mfrac><mo>(</mo><mi>x</mi><mo>&minus;</mo><mi>a</mi><msup><mo>)</mo><mi>k</mi></msup><mo>+</mo><mo fence="false">(</mo><mfrac><mrow><mi>x</mi><mo>&minus;</mo><mi>a</mi></mrow><mrow><mi>x</mi><mo>&minus;</mo><mi>&xi;</mi></mrow></mfrac><msup><mo fence="false">)</mo><mi>p</mi></msup><mfrac><mrow><mo>(</mo><mi>x</mi><mo>&minus;</mo><mi>&xi;</mi><msup><mo>)</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><mrow><mi>n</mi><mo>!</mo><mi>p</mi></mrow></mfrac><msup><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>(</mo><mi>&xi;</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">f&nbsp;(x)= \sum\limits_{k=0}^{n} \frac{f^{(k)}(a)}{k! }(x-a)^k+\Big (\frac{x-a}{x-\xi}\Big)^p\frac{(x-\xi)^{n+1}}{n! p}f^{n+1}(\xi)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.6513970000000002em;"></span><span class="strut bottom" style="height:2.9535100000000005em;vertical-align:-1.302113em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mclose">)</span><span class="mrel">=</span><span class="mop op-limits"><span class="vlist"><span style="top:1.202113em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mrel">=</span><span class="mord mathrm">0</span></span></span></span><span style="top:-0.000005000000000032756em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span><span class="op-symbol large-op mop">&sum;</span></span></span><span style="top:-1.250005em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathit">n</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mclose">!</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mclose">)</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mopen">(</span><span class="mord mathit">a</span><span class="mclose">)</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mbin">&minus;</span><span class="mord mathit">a</span><span class="mclose"><span class="mclose">)</span><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathit" style="margin-right:0.03148em;">k</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mbin">+</span><span class="mord"><span class="style-wrap reset-textstyle textstyle uncramped"><span class="delimsizing size2">(</span></span></span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.6860000000000002em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathit">x</span><span class="mbin">&minus;</span><span class="mord mathit" style="margin-right:0.04601em;">&xi;</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord mathit">x</span><span class="mbin">&minus;</span><span class="mord mathit">a</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mord"><span class="mord"><span class="style-wrap reset-textstyle textstyle uncramped"><span class="delimsizing size2">)</span></span></span><span class="vlist"><span style="top:-0.7639999999999999em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathit">p</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.6860000000000002em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathit">n</span><span class="mclose">!</span><span class="mord mathit">p</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mopen">(</span><span class="mord mathit">x</span><span class="mbin">&minus;</span><span class="mord mathit" style="margin-right:0.04601em;">&xi;</span><span class="mclose"><span class="mclose">)</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathit">n</span><span class="mbin">+</span><span class="mord mathrm">1</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mord"><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="vlist"><span style="top:-0.41300000000000003em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathit">n</span><span class="mbin">+</span><span class="mord mathrm">1</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.04601em;">&xi;</span><span class="mclose">)</span></span></span></span></span> Кому интересно в&nbsp;подробностях&nbsp;&mdash; добро пожаловать под кат!</p></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+
+            </div>
+        </div>
+        <div class="modal-footer">
+            <p class="results-count text-medium" data-message-zero="Статей не найдено" data-message-one="Найдена 1 статья" data-message-other="Статей найдено: {n}">
+                Статей найдено: 3
+            </p>
+        </div>
+    </div>
+</div>
+        <div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+        <!--SCRIPTS-->
+<script src="/assets/js/script-dg6tzzctqxbgobbcfyibsqqgd50vtgfwkh1zmpbgnvxveougr2174myoix4o.min.js"></script>
+<!--SCRIPTS END-->
+
+        <script>
+             var disqus_config = function () {
+                 this.page.url = 'https://nachasic.gihub.io/2016/09/14/lego-storytelling-part-1/';
+                 
+                    this.page.identifier = '2016/09/14/lego-storytelling-part-1/';
+                 
+             };
+            (function() {
+                var d = document, s = d.createElement('script');
+                var disqus_shortname = 'nachasic';
+                s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment-with-locales.min.js"></script>
+    <script src="//cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+    <script>
+        var algoliaClient = algoliasearch('MSHILWBUQK', '3b69a42e1b8c40187277bee51c14d750');
+        var algoliaIndex = algoliaClient.initIndex('nachasic');
+    </script>
+    </body>
+</html>
