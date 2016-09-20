@@ -4,9 +4,9 @@
   <subtitle>Per aspera non penis canis est</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://nachasic.gihub.io/"/>
-  <updated>2016-09-19T16:40:55.000Z</updated>
-  <id>https://nachasic.gihub.io/</id>
+  <link href="https://nachasic.github.io/"/>
+  <updated>2016-09-20T09:24:18.000Z</updated>
+  <id>https://nachasic.github.io/</id>
   
   <author>
     <name>Ублюжок Начасик</name>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>Прокачиваем бложек</title>
-    <link href="https://nachasic.gihub.io/2016/09/19/math/"/>
-    <id>https://nachasic.gihub.io/2016/09/19/math/</id>
+    <link href="https://nachasic.github.io/2016/09/19/math/"/>
+    <id>https://nachasic.github.io/2016/09/19/math/</id>
     <published>2016-09-19T09:12:37.000Z</published>
-    <updated>2016-09-19T16:40:55.000Z</updated>
+    <updated>2016-09-20T09:24:18.000Z</updated>
     
     <content type="html"><![CDATA[<p>Сегодня сделал несколько важных первых изменений во&nbsp;внешнем виде бложичка: подправил кое-что по&nbsp;типографике и&nbsp;включил рендеринг математических формул, как вот такая, например:<span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msubsup><mo>&sum;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi></mrow></msubsup><mfrac><mrow><msup><mi>f</mi><mrow><mo>(</mo><mi>k</mi><mo>)</mo></mrow></msup><mo>(</mo><mi>a</mi><mo>)</mo></mrow><mrow><mi>k</mi><mo>!</mo></mrow></mfrac><mo>(</mo><mi>x</mi><mo>&minus;</mo><mi>a</mi><msup><mo>)</mo><mi>k</mi></msup><mo>+</mo><mo fence="false">(</mo><mfrac><mrow><mi>x</mi><mo>&minus;</mo><mi>a</mi></mrow><mrow><mi>x</mi><mo>&minus;</mo><mi>&xi;</mi></mrow></mfrac><msup><mo fence="false">)</mo><mi>p</mi></msup><mfrac><mrow><mo>(</mo><mi>x</mi><mo>&minus;</mo><mi>&xi;</mi><msup><mo>)</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><mrow><mi>n</mi><mo>!</mo><mi>p</mi></mrow></mfrac><msup><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>(</mo><mi>&xi;</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">f&nbsp;(x)= \sum\limits_{k=0}^{n} \frac{f^{(k)}(a)}{k! }(x-a)^k+\Big (\frac{x-a}{x-\xi}\Big)^p\frac{(x-\xi)^{n+1}}{n! p}f^{n+1}(\xi)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.6513970000000002em;"></span><span class="strut bottom" style="height:2.9535100000000005em;vertical-align:-1.302113em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mclose">)</span><span class="mrel">=</span><span class="mop op-limits"><span class="vlist"><span style="top:1.202113em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord scriptstyle cramped"><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mrel">=</span><span class="mord mathrm">0</span></span></span></span><span style="top:-0.000005000000000032756em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span><span class="op-symbol large-op mop">&sum;</span></span></span><span style="top:-1.250005em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathit">n</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mclose">!</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.03148em;">k</span><span class="mclose">)</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mopen">(</span><span class="mord mathit">a</span><span class="mclose">)</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mbin">&minus;</span><span class="mord mathit">a</span><span class="mclose"><span class="mclose">)</span><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathit" style="margin-right:0.03148em;">k</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mbin">+</span><span class="mord"><span class="style-wrap reset-textstyle textstyle uncramped"><span class="delimsizing size2">(</span></span></span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.6860000000000002em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathit">x</span><span class="mbin">&minus;</span><span class="mord mathit" style="margin-right:0.04601em;">&xi;</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord mathit">x</span><span class="mbin">&minus;</span><span class="mord mathit">a</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mord"><span class="mord"><span class="style-wrap reset-textstyle textstyle uncramped"><span class="delimsizing size2">)</span></span></span><span class="vlist"><span style="top:-0.7639999999999999em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathit">p</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.6860000000000002em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathit">n</span><span class="mclose">!</span><span class="mord mathit">p</span></span></span></span><span style="top:-0.22999999999999998em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mopen">(</span><span class="mord mathit">x</span><span class="mbin">&minus;</span><span class="mord mathit" style="margin-right:0.04601em;">&xi;</span><span class="mclose"><span class="mclose">)</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathit">n</span><span class="mbin">+</span><span class="mord mathrm">1</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span><span class="mord"><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="vlist"><span style="top:-0.41300000000000003em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord mathit">n</span><span class="mbin">+</span><span class="mord mathrm">1</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.04601em;">&xi;</span><span class="mclose">)</span></span></span></span></span> Кому интересно в&nbsp;подробностях&nbsp;&mdash; добро пожаловать под кат! <a id="more"></a></p>
 <p>На&nbsp;заметку: этот блог работает на&nbsp;статическом генераторе <a href="https://hexo.io" target="_blank" rel="external">Hexo</a> с&nbsp;замечательной бесплатной темой <a href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak" target="_blank" rel="external">Tranquilpeak</a>. Такую комбинацию я&nbsp;выбрал исключительно потому, что хотел собрать нечто достаточно функциональное в&nbsp;короткое время и&nbsp;с&nbsp;возможностью допиливать по&nbsp;мере необходимости. Статических генератор Hexo работает на&nbsp;Node.js, а&nbsp;значит, мне не&nbsp;составит труда разобраться в&nbsp;его работе и&nbsp;допилить то, что требуется, а&nbsp;тема мне просто понравилась своим внешним видом и&nbsp;функциональностью. Однако, и&nbsp;над ней пришлось немного поработать.</p>
@@ -59,25 +59,25 @@
     
     </summary>
     
-      <category term="Бложек" scheme="https://nachasic.gihub.io/categories/%D0%91%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA/"/>
+      <category term="Бложек" scheme="https://nachasic.github.io/categories/%D0%91%D0%BB%D0%BE%D0%B6%D0%B5%D0%BA/"/>
     
     
-      <category term="hexo" scheme="https://nachasic.gihub.io/tags/hexo/"/>
+      <category term="hexo" scheme="https://nachasic.github.io/tags/hexo/"/>
     
-      <category term="javascript" scheme="https://nachasic.gihub.io/tags/javascript/"/>
+      <category term="javascript" scheme="https://nachasic.github.io/tags/javascript/"/>
     
-      <category term="TeX" scheme="https://nachasic.gihub.io/tags/TeX/"/>
+      <category term="TeX" scheme="https://nachasic.github.io/tags/TeX/"/>
     
-      <category term="KaTeX" scheme="https://nachasic.gihub.io/tags/KaTeX/"/>
+      <category term="KaTeX" scheme="https://nachasic.github.io/tags/KaTeX/"/>
     
-      <category term="типографика" scheme="https://nachasic.gihub.io/tags/%D1%82%D0%B8%D0%BF%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%B0/"/>
+      <category term="типографика" scheme="https://nachasic.github.io/tags/%D1%82%D0%B8%D0%BF%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%B0/"/>
     
   </entry>
   
   <entry>
     <title>Сторителлинг по принципу LEGO 2</title>
-    <link href="https://nachasic.gihub.io/2016/09/16/lego-storytelling-part-2/"/>
-    <id>https://nachasic.gihub.io/2016/09/16/lego-storytelling-part-2/</id>
+    <link href="https://nachasic.github.io/2016/09/16/lego-storytelling-part-2/"/>
+    <id>https://nachasic.github.io/2016/09/16/lego-storytelling-part-2/</id>
     <published>2016-09-16T13:41:01.000Z</published>
     <updated>2016-09-19T16:42:03.000Z</updated>
     
@@ -115,23 +115,23 @@
     
     </summary>
     
-      <category term="GameDev" scheme="https://nachasic.gihub.io/categories/GameDev/"/>
+      <category term="GameDev" scheme="https://nachasic.github.io/categories/GameDev/"/>
     
     
-      <category term="конспекты" scheme="https://nachasic.gihub.io/tags/%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B/"/>
+      <category term="конспекты" scheme="https://nachasic.github.io/tags/%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B/"/>
     
-      <category term="сторителлинг" scheme="https://nachasic.gihub.io/tags/%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D0%BB%D0%B8%D0%BD%D0%B3/"/>
+      <category term="сторителлинг" scheme="https://nachasic.github.io/tags/%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D0%BB%D0%B8%D0%BD%D0%B3/"/>
     
-      <category term="игры" scheme="https://nachasic.gihub.io/tags/%D0%B8%D0%B3%D1%80%D1%8B/"/>
+      <category term="игры" scheme="https://nachasic.github.io/tags/%D0%B8%D0%B3%D1%80%D1%8B/"/>
     
-      <category term="GDC" scheme="https://nachasic.gihub.io/tags/GDC/"/>
+      <category term="GDC" scheme="https://nachasic.github.io/tags/GDC/"/>
     
   </entry>
   
   <entry>
     <title>Сторителлинг по принципу LEGO 1</title>
-    <link href="https://nachasic.gihub.io/2016/09/14/lego-storytelling-part-1/"/>
-    <id>https://nachasic.gihub.io/2016/09/14/lego-storytelling-part-1/</id>
+    <link href="https://nachasic.github.io/2016/09/14/lego-storytelling-part-1/"/>
+    <id>https://nachasic.github.io/2016/09/14/lego-storytelling-part-1/</id>
     <published>2016-09-14T13:41:01.000Z</published>
     <updated>2016-09-19T16:41:53.000Z</updated>
     
@@ -259,16 +259,16 @@
     
     </summary>
     
-      <category term="GameDev" scheme="https://nachasic.gihub.io/categories/GameDev/"/>
+      <category term="GameDev" scheme="https://nachasic.github.io/categories/GameDev/"/>
     
     
-      <category term="конспекты" scheme="https://nachasic.gihub.io/tags/%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B/"/>
+      <category term="конспекты" scheme="https://nachasic.github.io/tags/%D0%BA%D0%BE%D0%BD%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D1%8B/"/>
     
-      <category term="сторителлинг" scheme="https://nachasic.gihub.io/tags/%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D0%BB%D0%B8%D0%BD%D0%B3/"/>
+      <category term="сторителлинг" scheme="https://nachasic.github.io/tags/%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%82%D0%B5%D0%BB%D0%BB%D0%B8%D0%BD%D0%B3/"/>
     
-      <category term="игры" scheme="https://nachasic.gihub.io/tags/%D0%B8%D0%B3%D1%80%D1%8B/"/>
+      <category term="игры" scheme="https://nachasic.github.io/tags/%D0%B8%D0%B3%D1%80%D1%8B/"/>
     
-      <category term="GDC" scheme="https://nachasic.gihub.io/tags/GDC/"/>
+      <category term="GDC" scheme="https://nachasic.github.io/tags/GDC/"/>
     
   </entry>
   
