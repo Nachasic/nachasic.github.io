@@ -4,44 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Бложик Начасик">
-    <title>Сторителлинг по&nbsp;принципу LEGO 1&nbsp;&mdash; Бложик Начасик</title>
+    <title>Удержание игрока, или цепкие лапы гриндана&nbsp;&mdash; Бложик Начасик</title>
     <meta name="author" content="Ублюжок Начасик">
 
-        <meta name="keywords" content="сторителлинг,нарраторика,нарратив,повествование,квест,сценарий,игры,процедурная генерация,персонажи">
+        <meta name="keywords" content="геймдев,gamedev,игры,удовольствие,ящик Скиннера,гринда,free2play,поток,MMO,психология">
 
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
 
-    <meta name="description" content="Кен Левин
-Совсем недавно наткнулся на&amp;nbsp;выступление Кевина Левина на&amp;nbsp;GDC 2014 года &amp;laquo;Narrative Lego&amp;raquo;. 
-В&amp;nbsp;своем выступлении Кен рассказывал о&amp;nbsp;придуманной в&amp;nbsp;стенах студ">
+    <meta name="description" content="Много есть способов сделать игровой процесс затягивающим и&amp;nbsp;&amp;laquo;цепляющим&amp;raquo;: некоторые работают хорошо сами по&amp;nbsp;себе, другие требуют баланса, проектирования, отладки и&amp;nbsp;плясок с&amp;nb">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="Сторителлинг по принципу LEGO 1">
-<meta property="og:url" content="https://nachasic.github.io/2016/09/14/lego-storytelling-part-1/index.html">
+<meta property="og:title" content="Удержание игрока, или цепкие лапы гриндана">
+<meta property="og:url" content="https://nachasic.github.io/2016/09/25/hooking-players-attention/index.html">
 <meta property="og:site_name" content="Бложик Начасик">
-<meta property="og:description" content="Кен Левин
-Совсем недавно наткнулся на&amp;nbsp;выступление Кевина Левина на&amp;nbsp;GDC 2014 года &amp;laquo;Narrative Lego&amp;raquo;. 
-В&amp;nbsp;своем выступлении Кен рассказывал о&amp;nbsp;придуманной в&amp;nbsp;стенах студ">
-<meta property="og:image" content="https://res.cloudinary.com/nachasic/image/upload/c_thumb,g_custom:face,h_300,w_150/v1474043148/2581543-kenlevine__130618170314_zgqclg.jpg">
-<meta property="og:image" content="https://res.cloudinary.com/nachasic/image/upload/c_thumb,g_center,h_650,w_1920/v1474118158/Снимок_экрана_2016-09-17_в_16.14.26_hiig6u.png">
-<meta property="og:image" content="https://res.cloudinary.com/nachasic/image/upload/q_auto/v1474122202/parallax03_yacfkk.png">
-<meta property="og:image" content="https://res.cloudinary.com/nachasic/image/upload/c_scale,q_auto,w_900/v1474122841/Beast5_u1c7yc.jpg">
-<meta property="og:image" content="https://res.cloudinary.com/nachasic/image/upload/c_thumb,h_400,q_auto,w_1920/v1474136420/social-network-links_txtn05.png">
-<meta property="og:image" content="https://res.cloudinary.com/nachasic/image/upload/c_scale,w_900/v1474129810/semyon1.png">
-<meta property="og:updated_time" content="2016-09-26T14:33:14.000Z">
+<meta property="og:description" content="Много есть способов сделать игровой процесс затягивающим и&amp;nbsp;&amp;laquo;цепляющим&amp;raquo;: некоторые работают хорошо сами по&amp;nbsp;себе, другие требуют баланса, проектирования, отладки и&amp;nbsp;плясок с&amp;nb">
+<meta property="og:image" content="https://res.cloudinary.com/nachasic/image/upload/q_auto:good/v1474885887/skinner_ib7sv5.png">
+<meta property="og:image" content="https://res.cloudinary.com/nachasic/image/upload/c_scale,q_auto:best,w_134/v1474897139/low-angle-view-of-pigeon-flying-against-clear-sky-picture-id597712291_sfqcqo.png">
+<meta property="og:updated_time" content="2016-09-28T12:39:39.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Сторителлинг по принципу LEGO 1">
-<meta name="twitter:description" content="Кен Левин
-Совсем недавно наткнулся на&amp;nbsp;выступление Кевина Левина на&amp;nbsp;GDC 2014 года &amp;laquo;Narrative Lego&amp;raquo;. 
-В&amp;nbsp;своем выступлении Кен рассказывал о&amp;nbsp;придуманной в&amp;nbsp;стенах студ">
-<meta name="twitter:image" content="https://res.cloudinary.com/nachasic/image/upload/c_thumb,g_custom:face,h_300,w_150/v1474043148/2581543-kenlevine__130618170314_zgqclg.jpg">
+<meta name="twitter:title" content="Удержание игрока, или цепкие лапы гриндана">
+<meta name="twitter:description" content="Много есть способов сделать игровой процесс затягивающим и&amp;nbsp;&amp;laquo;цепляющим&amp;raquo;: некоторые работают хорошо сами по&amp;nbsp;себе, другие требуют баланса, проектирования, отладки и&amp;nbsp;плясок с&amp;nb">
+<meta name="twitter:image" content="https://res.cloudinary.com/nachasic/image/upload/q_auto:good/v1474885887/skinner_ib7sv5.png">
 
         <meta property="og:image" content="https://nachasic.github.io/assets/images/avatar.png">
 
-        <meta property="og:image" content="https://res.cloudinary.com/nachasic/image/upload/c_thumb,e_blur:258,g_custom,h_150,w_900/v1474041069/29199600925_27ce17e76d_o_gbwkln.jpg">
-        <meta class="swiftype" name="image" data-type="enum" content="https://res.cloudinary.com/nachasic/image/upload/c_thumb,e_blur:258,g_custom,h_150,w_900/v1474041069/29199600925_27ce17e76d_o_gbwkln.jpg">
+        <meta property="og:image" content="http://res.cloudinary.com/nachasic/image/upload/c_thumb,g_custom,h_150,q_auto,w_900/v1474895577/Vegas_slots_aqqxvx.jpg">
+        <meta class="swiftype" name="image" data-type="enum" content="http://res.cloudinary.com/nachasic/image/upload/c_thumb,g_custom,h_150,q_auto,w_900/v1474895577/Vegas_slots_aqqxvx.jpg">
 
-        <meta property="og:image" content="https://res.cloudinary.com/nachasic/image/upload/c_scale,e_brightness:-10,q_auto,w_1920/v1474039511/29199600925_27ce17e76d_o_gbwkln.jpg">
-        <meta class="swiftype" name="image" data-type="enum" content="https://res.cloudinary.com/nachasic/image/upload/c_scale,e_brightness:-10,q_auto,w_1920/v1474039511/29199600925_27ce17e76d_o_gbwkln.jpg">
+        <meta property="og:image" content="https://res.cloudinary.com/nachasic/image/upload/c_crop,e_brightness:-20,h_900,q_auto,w_1920/v1474885961/header_SCHULSON-essay-BE069967_hun0yn.jpg">
+        <meta class="swiftype" name="image" data-type="enum" content="https://res.cloudinary.com/nachasic/image/upload/c_crop,e_brightness:-20,h_900,q_auto,w_1920/v1474885961/header_SCHULSON-essay-BE069967_hun0yn.jpg">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css">
     <!--STYLES-->
@@ -197,18 +187,18 @@
 </nav>
             <div class="post-header-cover
                     text-left
-                    post-header-cover--partial" style="background-image:url('https://res.cloudinary.com/nachasic/image/upload/c_scale,e_brightness:-10,q_auto,w_1920/v1474039511/29199600925_27ce17e76d_o_gbwkln.jpg');" data-behavior="4">
+                    post-header-cover--partial" style="background-image:url('https://res.cloudinary.com/nachasic/image/upload/c_crop,e_brightness:-20,h_900,q_auto,w_1920/v1474885961/header_SCHULSON-essay-BE069967_hun0yn.jpg');" data-behavior="4">
 
                 <div class="post-header main-content-wrap text-left">
 
         <h1 class="post-title" itemprop="headline">
-            Сторителлинг по&nbsp;принципу LEGO&nbsp;1
+            Удержание игрока, или цепкие лапы гриндана
         </h1>
 
     <div class="post-meta">
-    <time itemprop="datePublished" datetime="2016-09-14T16:41:01+03:00">
+    <time itemprop="datePublished" datetime="2016-09-25T18:19:39+03:00">
 
-            14&nbsp;сентября 2016
+            25&nbsp;сентября 2016
 
     </time>
 
@@ -226,120 +216,53 @@
 
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <div class="figure fig-25" style="width:;"><a class="fancybox" href="https://res.cloudinary.com/nachasic/image/upload/v1474043148/2581543-kenlevine__130618170314_zgqclg.jpg" title="Кен Левин" data-fancybox-group="" target="_blank" rel="external"><img class="fig-img" src="https://res.cloudinary.com/nachasic/image/upload/c_thumb,g_custom:face,h_300,w_150/v1474043148/2581543-kenlevine__130618170314_zgqclg.jpg" alt="Кен Левин"></a><span class="caption">Кен Левин</span></div>
-<p>Совсем недавно наткнулся на&nbsp;выступление Кевина Левина на&nbsp;GDC 2014 года &laquo;Narrative Lego&raquo;. </p>
-<p>В&nbsp;своем выступлении Кен рассказывал о&nbsp;придуманной в&nbsp;стенах студии Irrational Games системе, создающей интерактивное повествование в&nbsp;играх со&nbsp;множеством персонажей и&nbsp;второстепенных сюжетов, основываясь только лишь на&nbsp;действиях игрока, в&nbsp;противовес более традиционным техникам линейного повествования. </p>
-<p>Несмотря на&nbsp;то, что все известные игры, вышедшие из-под руки Кена полностью линейны, а&nbsp;сюжет в&nbsp;них подается в&nbsp;строго определенном сценаристами порядке, идеи, предложенные им, звучат очень интересно. В&nbsp;этом посте будет моя вольная интерпретация его выступления вперемешку с&nbsp;собственными мыслями. ОЧЕНЬ ДЛИННЮЩИЙ ПОСТ&nbsp;&mdash; <a href="/2016/09/16/lego-storytelling-part-2/">даже продолжение есть</a>, будьте осторожны.<a id="more"></a></p>
-<p>Кто не&nbsp;знает:<br><blockquote><p><strong>Кен Левин</strong> (англ. Ken Levine, родился 1&nbsp;сентября 1966 года)&nbsp;&mdash; американский геймдизайнер, творческий директор и&nbsp;один из&nbsp;основателей компании <a href="https://ru.wikipedia.org/wiki/Irrational_Games" target="_blank" rel="external">Irrational Games</a>. Левин известен прежде всего как создатель компьютерных игр <a href="https://ru.wikipedia.org/wiki/BioShock" target="_blank" rel="external">BioShock</a>, <a href="https://ru.wikipedia.org/wiki/Thief:_The_Dark_Project" target="_blank" rel="external">Thief: The Dark Project</a> и&nbsp;<a href="https://ru.wikipedia.org/wiki/System_Shock_2" target="_blank" rel="external">System Shock 2</a>.</p><footer><strong>Педивикия</strong><cite><a href="http://www.wikiwand.com/ru/%D0%9B%D0%B5%D0%B2%D0%B8%D0%BD,_%D0%9A%D0%B5%D0%BD" target="_blank" rel="external">Кен Левин</a></cite></footer></blockquote><br>Само выступление можно посмотреть на&nbsp;<a href="https://www.youtube.com/channel/UC0JB7TSe49lg56u6qH8y_MQ" target="_blank" rel="external">официальном канале GDC</a>:<br><div class="video-container"><iframe src="//www.youtube.com/embed/p40p0AVUH70" frameborder="0" allowfullscreen></iframe></div></p>
-</div><div class="figure figure--fullWidth"><img class="figure-img" src="https://res.cloudinary.com/nachasic/image/upload/c_thumb,g_center,h_650,w_1920/v1474118158/Снимок_экрана_2016-09-17_в_16.14.26_hiig6u.png" alt="Типа история с ветвлением?? ХЗ ваще на самом деле"><span class="caption">Типа история с&nbsp;ветвлением? ХЗ&nbsp;ваще на&nbsp;самом деле</span></div><div class="main-content-wrap">
-<h3 id="Линейные-повествования-несовершенны"><a href="#Линейные-повествования-несовершенны" class="headerlink" title="Линейные повествования несовершенны"></a>Линейные повествования несовершенны</h3><p>Начал свое выступление Кен с&nbsp;краткой критики традиционного линейного повествования и&nbsp;его реализаций в&nbsp;играх.</p>
-<p>Линейное повествование&nbsp;&mdash; древнейшая форма рассказанной истории, отлично зарекомендовала себя в&nbsp;литературе, театре и&nbsp;кино. Однако в&nbsp;играх начинают проявляться некоторые ее&nbsp;недостатки.</p>
-<p>В&nbsp;частности, в&nbsp;линейном повествовании очень непросто реализовать сложное ветвление сюжетов. Каждый раз, когда мы&nbsp;хотим предоставить игроку возможность влиять на&nbsp;ход сюжета, мы&nbsp;создаем вилку альтернативных вариантов, каждый из&nbsp;которых приходится прописывать отдельно и&nbsp;полностью. Это значит, что хоть разнообразные сюжеты и&nbsp;реализуемы, их&nbsp;количество будет строго ограничено количеством таких веток, а&nbsp;интерактивность такого повествования будет заключена лишь в&nbsp;серии ключевых выборов.</p>
-<p>Самый вопиющий недостаток классических линейных историй в&nbsp;играх: в&nbsp;большинстве случаев они игнорируют главную особенность игры как художественной формы&nbsp;&mdash; интерактивность. Части истории не&nbsp;способны влиять друг на&nbsp;друга сами по&nbsp;себе, история не&nbsp;реагирует на&nbsp;поведение игрока на&nbsp;низком уровне. Короче говоря, </p>
-<div class="alert info"><p>Линейное повествование не&nbsp;является игровой механикой</p></div>
-<p>Кроме этих, в&nbsp;классических сюжетах есть еще несколько недостатков:</p>
+            <p>Много есть способов сделать игровой процесс затягивающим и&nbsp;&laquo;цепляющим&raquo;: некоторые работают хорошо сами по&nbsp;себе, другие требуют баланса, проектирования, отладки и&nbsp;плясок с&nbsp;бубном. Некоторые, захватывая и&nbsp;пожирая наше время, оставляют приятное ощущение чего-то пережитого, достигнутых целей и&nbsp;простой разрядки; а&nbsp;иногда сидишь, такой, и&nbsp;задумываешься печально о&nbsp;жизни и&nbsp;о&nbsp;том, на&nbsp;что ее&nbsp;точно не&nbsp;стоит тратить. Серьезно&nbsp;&mdash; как будто вместо курицы сожрал куриный кубик!<a id="more"></a></p>
+<p>Сколько раз, играя в&nbsp;большие крупнобюджетные игры, например MMO или фермы, игрок ловит себя на&nbsp;мысли: &laquo;ну&nbsp;вот еще чуть-чуть добью, и&nbsp;спать&raquo;. До&nbsp;следующего leve-up, до&nbsp;конца матча, до&nbsp;следующего урожая редисочки&nbsp;&mdash; все одно. А&nbsp;на&nbsp;завтра все то&nbsp;же самое, и&nbsp;так проходят часы, дни, а&nbsp;бывает,&nbsp;&mdash; в&nbsp;особо запущенных случаях,&nbsp;&mdash; месяцы и&nbsp;годы. И&nbsp;вот уже батя поджигает твой компьютер, мамка бьет тревогу в&nbsp;телевизоре, перед которым бабка заряжает банки с&nbsp;водой&nbsp;&mdash; такая она, игровая зависимость, беда для всей семьи.</p>
+<p>Иногда, оглянувшись на&nbsp;весь пройденный путь в&nbsp;игре, игрок понимает, что за&nbsp;этой увлеченностью не&nbsp;было ничего, кроме повторяющегося примитивного геймплейного цикла&nbsp;&mdash; того, что принято в&nbsp;узких кругах любителей RPG называть гриндой. Единственной наградой за&nbsp;часы, потраченные на&nbsp;одинаковые убийства тысяч одинаковых мобов, оказались чуть завышенные цифры игровой статистики. На&nbsp;деле после недель &laquo;тупой гринды&raquo; остаются только недели &laquo;тупой гринды&raquo;. И&nbsp;несмотря на&nbsp;это, игрок продолжает играть. Но&nbsp;почему&nbsp;же так?</p>
+<h3 id="Эксперименты-над-с-голубями"><a href="#Эксперименты-над-с-голубями" class="headerlink" title="Эксперименты над с голубями"></a>Эксперименты над с&nbsp;голубями</h3><p>Ответ достаточно прост: проблема в&nbsp;том, что огромное количество разработчиков в&nbsp;погоне за&nbsp;повышением игровых жопочасов прибегают к&nbsp;некоторым методам, которые можно было&nbsp;бы назвать черным геймдизайном. Речь идет, прежде всего, о&nbsp;так называемом &laquo;ящике Скиннера&raquo;.</p>
+<blockquote><p>Сейчас уже невозможно создать достаточно увлекательную по&nbsp;сюжету игру, чтобы держать&nbsp;вас сотни часов перед&nbsp;экраном, поэтому изменили саму механику игры, чтобы игроки повторяли одни и&nbsp;те&nbsp;же действия снова и&nbsp;снова хотят они этого или&nbsp;нет. Поэтому разработчики и&nbsp;обратились к&nbsp;ящику&nbsp;Скиннера.</p><footer><strong>Habrahabr.ru</strong><cite><a href="http://habrahabr.ru/post/88161/" target="_blank" rel="external">5 способов, которыми игры пытаются вызвать зависимость</a></cite></footer></blockquote>
+<p>Суть &laquo;ящика Скиннера&raquo; в&nbsp;простом эксперименте: голубь помещается в&nbsp;ящик с&nbsp;кнопкой, нажатие на&nbsp;которую награждает голубя лакомством. Простейшая система, моделирующая выбор и&nbsp;принятие решения (нажать или не&nbsp;нажать кнопку) и&nbsp;последствия этого решения. Цель задачи&nbsp;&mdash; смоделировать ситуацию, в&nbsp;которой птица будет нажимать на&nbsp;кнопку постоянно.</p>
+<p>Проблема в&nbsp;том, что если награждать голубя за&nbsp;каждое нажатие кнопки, он&nbsp;насытится и&nbsp;потеряет интерес. Если выдавать лакомство периодически&nbsp;&mdash; голубь быстро сообразит способ эксплуатировать систему для собственного насыщения. Да, они достаточно умны для такой фигни.</p>
+<p>Самое интересное происходит тогда, когда к&nbsp;появлению лакомства приводят лишь некоторые нажатия, и&nbsp;вероятность их&nbsp;срабатывания постоянно снижается. Попав в&nbsp;такую коробку, птица продолжала наркоманить кнопку до&nbsp;отвала клюва, забывая о&nbsp;любом другом времяпрепровождении.<br><br></p>
+<div class="figure fig-100" style="width:;"><a class="fancybox" href="https://res.cloudinary.com/nachasic/image/upload/c_scale,q_auto,w_900/v1474885887/skinner_ib7sv5.png" title="&laquo;Настоящая проблема не&nbsp;в&nbsp;том, думают&nbsp;ли машины,&nbsp;&mdash; но&nbsp;в&nbsp;том, задумываются&nbsp;ли люди&raquo;&nbsp;&mdash; Беррес Фредерик Скиннер" data-fancybox-group="" target="_blank" rel="external"><img class="fig-img" src="https://res.cloudinary.com/nachasic/image/upload/q_auto:good/v1474885887/skinner_ib7sv5.png" alt="&laquo;Настоящая проблема не&nbsp;в&nbsp;том, думают&nbsp;ли машины,&nbsp;&mdash; но&nbsp;в&nbsp;том, задумываются&nbsp;ли люди&raquo;&nbsp;&mdash; Беррес Фредерик Скиннер"></a><span class="caption">&laquo;Настоящая проблема не&nbsp;в&nbsp;том, думают&nbsp;ли машины,&nbsp;&mdash; но&nbsp;в&nbsp;том, задумываются&nbsp;ли люди&raquo;&nbsp;&mdash; Беррес Фредерик Скиннер</span></div>
+<p>Такой эксперимент проводил американский психолог <a href="http://www.wikiwand.com/ru/Скиннер,_Беррес_Фредерик" target="_blank" rel="external">Беррес Фредерик Скиннер</a>, и&nbsp;в&nbsp;ходе своих исследований он&nbsp;пришел к&nbsp;двум фундаментальным выводам:</p>
 <ul>
-<li>они дороги в&nbsp;производстве;</li>
-<li>множества концовок все еще зависят от&nbsp;крайне ограниченного набора состояний;</li>
-<li>уже состоявшийся сюжет невозможно дополнить&nbsp;&mdash; его можно только продолжить;</li>
-<li>существует множество примеров хорошей реализации линейного сюжета в&nbsp;игре, однако играм уже давно нужен новый подход.</li>
+<li>эта фишечка применима не&nbsp;только к&nbsp;голубям и&nbsp;крысам, но&nbsp;и&nbsp;к&nbsp;людям;</li>
+<li>эта фишечка до&nbsp;опупевания эффективна.</li>
 </ul>
-</div><div class="figure figure--fullWidth"><img class="figure-img" src="https://res.cloudinary.com/nachasic/image/upload/q_auto/v1474122202/parallax03_yacfkk.png" alt="Ancient Domains of Mystery - полностью процедурно-генерируемый roguelike"><span class="caption">Ancient Domains of&nbsp;Mystery&nbsp;&mdash; полностью процедурно-генерируемый roguelike</span></div><div class="main-content-wrap">
-<h3 id="Процедурная-генерация-тупик"><a href="#Процедурная-генерация-тупик" class="headerlink" title="Процедурная генерация - тупик"></a>Процедурная генерация&nbsp;&mdash; тупик</h3><p>Примеров удачной и&nbsp;популярной процедурной генерации квестов, сюжетов и&nbsp;персонажей не&nbsp;так уж&nbsp;и&nbsp;много. Главным образом, это связано с&nbsp;тем, что почти в&nbsp;каждом из&nbsp;таких примеров работу сценариста целиком перекладывают на&nbsp;<abbr title="Искусственного Идиота">ИИ</abbr>. </p>
-<p>Кен не&nbsp;рассматривал в&nbsp;своей речи такие игры, как <a href="http://www.wikiwand.com/ru/Slaves_to_Armok_II:_Dwarf_Fortress" target="_blank" rel="external">Dwarf Fortress</a> или <a href="http://www.wikiwand.com/ru/Ancient_Domains_of_Mystery" target="_blank" rel="external">Ancient Domains of&nbsp;Mystery</a>, вероятно, потому, что хоть сюжеты с&nbsp;персонажами и&nbsp;генерируются там на&nbsp;ходу, и&nbsp;даже сами становятся игровой механикой, их&nbsp;выразительные качества серьезно уступают классическим сюжетам, написанным живыми авторами.</p>
-<p>Проблема кроется в&nbsp;традиционном подходе к&nbsp;написанию <abbr title="Искусственного Идиота">ИИ</abbr>:</p>
-<ul>
-<li>технический подход часто направлен на&nbsp;симуляцию человека, а&nbsp;не&nbsp;персонажа;</li>
-<li>симулировать живого человека даже в&nbsp;рамках игры&nbsp;&mdash; чрезвычайно трудная задача, мало у&nbsp;кого это получается достаточно хорошо;</li>
-<li>по-настоящему мощные реализации в&nbsp;наше время почти недостижимы;</li>
-<li>излишняя амбициозность проекта может привести к&nbsp;параличу.</li>
-</ul>
-<div class="figure fig-100" style="width:;"><a class="fancybox" href="https://res.cloudinary.com/nachasic/image/upload/c_scale,q_auto,w_1200/v1474122841/Beast5_u1c7yc.jpg" title="Процедурный болван из No Man's Sky не понимает, зачем он здесь" data-fancybox-group="screenshots" target="_blank" rel="external"><img class="fig-img" src="https://res.cloudinary.com/nachasic/image/upload/c_scale,q_auto,w_900/v1474122841/Beast5_u1c7yc.jpg" alt="Процедурный болван из No Man's Sky не понимает, зачем он здесь"></a><span class="caption">Процедурный болван из&nbsp;No&nbsp;Manʼs Sky не&nbsp;понимает, зачем он&nbsp;здесь</span></div>
-<p>Еще меньше успешных примеров гармоничного сочетания процедурной генерации с&nbsp;профессионально-написанными сценариями, несмотря на&nbsp;то, что такой подход вполне может быть самым перспективным. </p>
-<p>Разумеется, выбрав его, разработчик рискует столкнуться с&nbsp;рядом технических сложностей, однако, это не&nbsp;должно стать существенной преградой. Превращение написанного автором-человеком сценария в&nbsp;игровую механику&nbsp;&mdash; процесс очень похожий на&nbsp;становление другой важной механики в&nbsp;индустрии&nbsp;&mdash; физических симуляций.</p>
-<p>Совершенно очевидно, что в&nbsp;играх далеко не&nbsp;сразу появилась продвинутая физика, какую мы&nbsp;видим сейчас: когда-то игры не&nbsp;умели симулировать поведение жидкостей, частиц или тканей. Все началось с&nbsp;простых экспериментов по&nbsp;столкновению твердых коробок в&nbsp;виртуальном пространстве&nbsp;&mdash; этого тогда уже было вполне достаточно, чтобы изумить игрока. Разумеется, все видели поведение подобных объектов в&nbsp;реальном мире и&nbsp;представляли себе все несовершенство ранних технологий, но&nbsp;это понимание не&nbsp;мешало людям получать удовольствие от&nbsp;игры.</p>
-<p>И&nbsp;развиваясь, мало-помалу наращивая достоверность и&nbsp;выразительное богатство, игровая физика достигла того уровня развития, на&nbsp;котором пребывает сейчас. Возможно, подобный подход поможет и&nbsp;в&nbsp;создании интерактивных игровых сюжетов.</p>
-</div><div class="figure figure--fullWidth"><img class="figure-img" src="https://res.cloudinary.com/nachasic/image/upload/c_thumb,h_400,q_auto,w_1920/v1474136420/social-network-links_txtn05.png" alt=""><span class="caption"></span></div><div class="main-content-wrap">
-<h3 id="Новая-методология"><a href="#Новая-методология" class="headerlink" title="Новая методология"></a>Новая методология</h3><p>Таким образом, можно попробовать суммировать положительные качества как традиционных линейных, так и&nbsp;процедурных повествований, чтобы представить себе некую супер-крутую систему, в&nbsp;которой:</p>
-<ul>
-<li>нарративные элементы взаимодействуют друг с&nbsp;другом;</li>
-<li>новые нарративные элементы порождаются непосредственно действиями игрока;</li>
-<li>процесс появления нового сюжета и&nbsp;триггеры, которые его запускают абсолютно <em>прозрачны</em> по&nbsp;отношению к&nbsp;игроку.</li>
-</ul>
-<p>Стоит отметить, что все, о&nbsp;чем здесь идет речь&nbsp;&mdash; не&nbsp;больше, чем мысленный эксперимент Кевина. Он&nbsp;сам не&nbsp;занимался техническими реализациями того, что предлагает, и&nbsp;Irrational Games на&nbsp;момент выступления тоже ни&nbsp;над чем подобным не&nbsp;работали.</p>
-<h4 id="Основные-понятия"><a href="#Основные-понятия" class="headerlink" title="Основные понятия"></a>Основные понятия</h4><p>Левин вводит несколько новых понятий, начиная с&nbsp;особого класса <abbr title="Non-Playable Character, неиграбельный персонаж">NPC</abbr>, имеющего в&nbsp;повествовании особый вес:</p>
-<dl><br> <dt>Звезда (star)</dt><dd>Персонаж, важный для&nbsp;истории и&nbsp;способный на&nbsp;нее влиять. У&nbsp;каждой звезды есть&nbsp;<strong>страсть</strong>.</dd><br> <dt>Страсть (passion)</dt><dd>Нечто, глубоко волнующее звезду, на&nbsp;что игрок может повлиять. Таким образом, страсть становится неким параметром звезды, зависящем от&nbsp;поведения игрока, и&nbsp;влияющим на&nbsp;поведение звезды.</dd><br> <dt>Порог (threshold)</dt><dd>Некая степень влияния игрока на&nbsp;страсть звезды, по&nbsp;достижению которой звезда начинает вести себя по-другому.</dd><br> <dt>Макрострасть (macro-passion)</dt><dd>Шкала, обозначающее общее отношение звезды к&nbsp;действиям игрока. Является некоей функцией от&nbsp;страстей.</dd><br> <dt>Дроны (drones)</dt><dd>Обычные NPC, которые, не&nbsp;имея собственных страстей, разделяют макрострасть своей звезды. Толпа, следующая за&nbsp;лидером</dd><br></dl>
+<p>Сами условия, при которых возникает эффект, ученый назвал оперантным обуславливанием (operant conditioning&nbsp;&mdash; рекомендуется к&nbsp;<a href="http://lmgtfy.com/?q=operant+conditioning" target="_blank" rel="external">возгуглению</a>). Этим&nbsp;же эффектом можно частично объяснить популярность азартных&nbsp;игр. Люди продолжают играть, несмотря на&nbsp;абсолютную осведомленность в&nbsp;невозможности выигрыша. Они гораздо охотнее будут передергивать &laquo;однорукого бандита&raquo; <del>лооооол ;)</del>, чтобы, возможно, за&nbsp;тысячи итераций получить 100 рублей, чем сидеть неделю в&nbsp;офисе и&nbsp;гарантировано получить гораздо больше.</p>
+<p>Геймплей множества аддиктивных игр сегодня представляет собой наглую эксплуатацию этого эффекта за&nbsp;тем небольшим замечанием, что награда игрока иллюзорна. Обычно, это просто повышение уровня опыта, уровня или статических переменных: защиты, атаки и&nbsp;прочего. Суть в&nbsp;том, что игра сбалансирована так, чтобы окружение игрока росло вместе с&nbsp;ним. Таким образом, рост со&nbsp;временем становится несущественным, и&nbsp;геймплей не&nbsp;претерпевает вообще никаких изменений&nbsp;&mdash; его вариативность оказывается исчерпана еще на&nbsp;момент попадания игрока в&nbsp;ящик. В&nbsp;конце концов игрок доходит до&nbsp;точки, когда играть уже даже отдаленно не&nbsp;весело.</p>
+<p>Оставив в&nbsp;стороне моральную сторону вопроса, можно с&nbsp;уверенностью сказать, что эксплуатация ящика Скиннера&nbsp;&mdash; дешевый способ получить внимание игрока. Причем рано или поздно, оный оглянется на&nbsp;свой игровой опыт и&nbsp;поймет, что только потратил время и&nbsp;остался разочарован. На&nbsp;момент написания этих строк масштабы такого разочарования уже начали принимать весьма ощутимые и&nbsp;заметные очертания:</p>
+<blockquote><p>&hellip;игроки быстро учатся распознавать пустые ящики Скиннера и&nbsp;закрывают приложения, когда их&nbsp;обнаруживают. Значит надо или вести гонку вооружений, изобретая все более и&nbsp;более изощренные способы маскировки ящика, или делать что-то оригинальное. А&nbsp;это сложно.</p><footer><strong>Сергей Галенкин</strong><cite><a href="http://galyonkin.com/2013/11/26/igroki-umnee-kryis-ustali-ot-yashhikov-skinnera/" target="_blank" rel="external">Игроки умнее крыс</a></cite></footer></blockquote>
+<p>Сейчас практически любая счетная система, предполагающая некую награду игрока за&nbsp;определенные действия, тем или иным способом эксплуатирует эффект Скиннера: система развития, выпадения лута, ранги в&nbsp;онлайн-шутерах, периодические выигрыши в&nbsp;слот-машинах&nbsp;&mdash; примеров очень и&nbsp;очень много.</p>
+<p>И&nbsp;не&nbsp;мудрено: смоделировать такую психологическую ловушку очень просто. В&nbsp;качестве примера возьмем формулу, рассчитывающую вероятность <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span></span></span></span> выпадения желаемого лута с&nbsp;мобов в&nbsp;World&nbsp;of&nbsp;Warcraft&nbsp;&mdash; </p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>1</mn><mo>&minus;</mo><mo>(</mo><mn>1</mn><mo>&minus;</mo><mi>D</mi><msup><mo>)</mo><mi>x</mi></msup><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">P&nbsp;(x)=1-(1-D)^x,</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathit">x</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathrm">1</span><span class="mbin">&minus;</span><span class="mopen">(</span><span class="mord mathrm">1</span><span class="mbin">&minus;</span><span class="mord mathit" style="margin-right:0.02778em;">D</span><span class="mclose"><span class="mclose">)</span><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathit">x</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mpunct">,</span></span></span></span></span>
 
-<p>Таким образом, можно получить нашу типичную фентезийную звезду:<br><div class="figure fig-100" style="width:;"><a class="fancybox" href="https://res.cloudinary.com/nachasic/image/upload/v1474129810/semyon1.png" title="Семен Суперстар" data-fancybox-group="diagrams" target="_blank" rel="external"><img class="fig-img" src="https://res.cloudinary.com/nachasic/image/upload/c_scale,w_900/v1474129810/semyon1.png" alt="Семен Суперстар"></a><span class="caption">Семен Суперстар</span></div><br>А&nbsp;вокруг нашего Семена (ну&nbsp;раз он&nbsp;уж&nbsp;вождь) вращается толпа орков поменьше, которые, в&nbsp;среднем, настроены по&nbsp;отношению к&nbsp;игроку так&nbsp;же, как и&nbsp;он.</p>
-<p>Игра регистрирует действия игрока, способные повлиять на&nbsp;страсти звезды и&nbsp;соответствующим образом обновляет их&nbsp;состояние. Должно получится нечто похожее на&nbsp;все известные кармические системы (например, как в&nbsp;<a href="http://www.wikiwand.com/ru/Star_Wars:_Knights_of_the_Old_Republic" target="_blank" rel="external">Star Wars: KoTOR</a>), только теперь шкала живет не&nbsp;в&nbsp;главном герое, а&nbsp;NPC, и&nbsp;у&nbsp;каждого их&nbsp;может быть несколько.</p>
-<p>Таким образом, мы&nbsp;можем подружиться с&nbsp;Семеном, если зарубим много женоподобных эльфов и&nbsp;достаточно активно поможем ему, например в&nbsp;строительстве его храма. А&nbsp;еще мы&nbsp;можем его очень обидеть, подружившись с&nbsp;эльфами, или, например, поделив на&nbsp;0 его любимую Людочку. Все зависит от&nbsp;того, начислят&nbsp;ли наши действия достаточно положительных или отрицательных очков в&nbsp;шкалу его <strong>страсти</strong>, чтобы шкала его <strong>макрострасти</strong> преодолела определенный <strong>порог</strong>, и&nbsp;Семен стал&nbsp;бы относиться к&nbsp;нам по-другому.</p>
-<p>Относясь к&nbsp;нам хорошо, Семен может давать бонусы: например, будучи вождем, он&nbsp;может познакомить нас с&nbsp;другими <strong>звездами</strong> или даже подарить шмотку. Если&nbsp;же мы&nbsp;его сильно разозлим, но&nbsp;прикажет дронам нас убить, например.</p>
-<p>В&nbsp;своей речи Кен Левин показал небольшую сводную таблицу ключевых действий игрока, возможных поощрений и&nbsp;наказаний со&nbsp;стороны персонажей:</p>
-<table>
-<thead>
-<tr>
-<th>Достижения</th>
-<th>Награды</th>
-<th>Наказания</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>убить X</td>
-<td>изменение цен</td>
-<td>изменение цен</td>
-</tr>
-<tr>
-<td>спасти X</td>
-<td>помощь в&nbsp;бою</td>
-<td>засада</td>
-</tr>
-<tr>
-<td>собрать X</td>
-<td>ресурсы</td>
-<td>эмбарго</td>
-</tr>
-<tr>
-<td>создать X</td>
-<td>баффы</td>
-<td>дебаффы</td>
-</tr>
-<tr>
-<td>найти X</td>
-<td>слухи (о&nbsp;новой страсти)</td>
-<td>нападение на&nbsp;собственность</td>
-</tr>
-<tr>
-<td>уничтожить X</td>
-<td>одолжить эквип</td>
-<td>враждебные дроны</td>
-</tr>
-<tr>
-<td>поклониться X</td>
-<td>отдать эквип</td>
-<td>слухи (о&nbsp;новой страсти)</td>
-</tr>
-<tr>
-<td>разозлить X</td>
-<td>поддержка дронами</td>
-<td></td>
-</tr>
-<tr>
-<td>ублажить X</td>
-<td>появление новых звезд</td>
-<td></td>
-</tr>
-<tr>
-<td>мини-игры</td>
-<td>влияние на&nbsp;враждебных звезд</td>
-<td></td>
-</tr>
-<tr>
-<td>другие ачивки</td>
-</tr>
-</tbody>
-</table>
-<p><a href="/2016/09/16/lego-storytelling-part-2/">Продолжение следует&hellip;</a></p>
+где: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.02778em;">D</span></span></span></span>&nbsp;&mdash; частота выпадения конкретного айтема в&nbsp;конкретной локации, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.43056em;"></span><span class="strut bottom" style="height:0.43056em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">x</span></span></span></span>&nbsp;&mdash; количество мобов, убитых в&nbsp;этой локации. Можно построить график с&nbsp;вероятностью на&nbsp;вертикальной оси и&nbsp;количеством трупов на&nbsp;горизонтальной, чтобы было нагляднее. Тут взята шмотка с&nbsp;дроп-рейтом <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.02778em;">D</span></span></span></span> в&nbsp;15%:</p>
+<object style="display: block; width: 75%; margin: 1em auto 0" type="image/svg+xml" data="plot.svg"><br>  Браузер не поддерживает SVG - скачайте <a href="https://www.google.ru/chrome/" target="_blank" rel="external">Хром</a> и не любите мне мозг!<br></object>
+
+<p>Видите, как просто&nbsp;&mdash; я&nbsp;такую фиготу от&nbsp;руки нарисовать&nbsp;бы мог! А&nbsp;самое главное&nbsp;&mdash; оно отлично работает: чем больше мобов в&nbsp;локации ты&nbsp;положишь, тем выше шанс выпадения хорошего лута, тем больше мобов ты&nbsp;сможешь покосить, чтобы получить еще более мощный лут, <del>&hellip; PROFIT!</del> и&nbsp;так до&nbsp;<a href="http://edition.cnn.com/2015/01/19/world/taiwan-gamer-death/" target="_blank" rel="external">смерти от&nbsp;потери времени</a>.</p>
+<p>Отчасти этим можно объяснить популярную тенденцию вносить элементы RPG в&nbsp;игры других жанров. Это не&nbsp;так плохо, если разработчик вносит ролевые элементы для того, чтобы сделать геймплей более глубоким и&nbsp;вариативным, совмещая интеллектуальные задачи с&nbsp;исполнительными&nbsp;&mdash; это прекрасно. Однако, это требует куда большего труда, чем простая эксплуатация эффекта Скиннера, и, как правило, дороже стоит.</p>
+<h3 id="Белая-магия"><a href="#Белая-магия" class="headerlink" title="Белая магия"></a>Белая магия</h3><p>К&nbsp;счастью, существуют более честные и&nbsp;качественные способы увлечь игрока, к&nbsp;которым может прибегнуть всякий качественный геймдизайн. Я&nbsp;приведу лишь несколько примеров, но&nbsp;упомяну, что с&nbsp;развитием индустрии их&nbsp;становится все больше и&nbsp;больше.</p>
+<p>На&nbsp;самом деле, если вы&nbsp;читали <del>любую книжку по&nbsp;геймдизайну</del> волшебную <a href="https://www.amazon.com/Art-Game-Design-Book-Lenses/dp/0123694965" target="_blank" rel="external">&laquo;Book of&nbsp;Lenses&raquo; Джесси Шелла</a>, то&nbsp;вам известна таксономия удовольствий, которые разные игроки способны получить от&nbsp;игры, составленная Марком ЛеБланом:<img src="https://res.cloudinary.com/nachasic/image/upload/c_scale,q_auto:best,w_134/v1474897139/low-angle-view-of-pigeon-flying-against-clear-sky-picture-id597712291_sfqcqo.png" style="position: relative; left: -160px; margin-bottom: -151px"></p>
+<ul>
+<li><strong>Чувственность:</strong> взаимодействие с&nbsp;чувствами человека&nbsp;&mdash; наблюдение красоты, музыки, приятные тактильные ощущения, доставляющая удовольствие кинестетика.</li>
+<li><strong>Фантазия:</strong> воображение игроком себя кем-то, кем он&nbsp;не&nbsp;является, в&nbsp;некоторых обстоятельствах, которых нет.</li>
+<li><strong>Нарратив:</strong> повествование и&nbsp;история, вызывающая переживание и&nbsp;сочувствие.</li>
+<li><strong>Испытание:</strong> преодоление препятствий и&nbsp;нахождение решений.</li>
+<li><strong>Товарищество:</strong> социализация&nbsp;&mdash; дружба, команда, кооперация и&nbsp;общение.</li>
+<li><strong>Открытие:</strong> поиск, наблюдение или испытание неожиданной новизны, раскрытие и&nbsp;разоблачение тайны.</li>
+<li><strong>Экспрессия:</strong> самовыражение в&nbsp;игре, создание сущностей, обладающих новизной и&nbsp;уникальностью.</li>
+<li><strong>Подчинение:</strong> снятие с&nbsp;себя доли ответственности, принятие условностей в&nbsp;виде правил и&nbsp;повиновения ограничениям игрового мира.</li>
+</ul>
+<p>Хорошему геймдизайнеру достаточно изучить свою целевую аудиторию, определить факторы, доставляющие ей&nbsp;наибольшее удовольствие, и&nbsp;сделать игру, которая будет доставлять&nbsp;&mdash; это самый верный способ. Игрок, вероятно, не&nbsp;захочет просто так бросать игру, в&nbsp;которую ему по-настоящему приятно играть <del>вот это поворот</del>.</p>
+<p>Конечно&nbsp;же, есть факторы геймплея и&nbsp;нарратива, важные при взаимодействии с&nbsp;любым игроком.</p>
+<h4 id="Загадки"><a href="#Загадки" class="headerlink" title="Загадки"></a>Загадки</h4><p>Людям нравятся вещи, потешающие интеллект и&nbsp;льстящие&nbsp;ему. Играйте на&nbsp;любопытстве и&nbsp;пытливости&nbsp;&mdash; если процесс поиска отгадки грамотно сбалансирован, момент каждого открытия доставляет игроку наслаждение. Поставьте игрока перед вопросом: &laquo;Что здесь происходит?&raquo;, а&nbsp;затем предоставьте возможность прийти к&nbsp;решению, и&nbsp;он&nbsp;продолжит играть.</p>
+<h4 id="Мастерство"><a href="#Мастерство" class="headerlink" title="Мастерство"></a>Мастерство</h4><p>Эта техника завязана на&nbsp;исполнительных геймплейных задачах. Предоставьте игроку возможность освоить некий навык, отточить владение им&nbsp;и&nbsp;успешно применять по&nbsp;ходу игрового процесса. Наиболее часто этот тип геймплея встречается в&nbsp;ритм-играх (Patapon, Guitar Hero), файтингах (Mortal Kombat, Tekken, Soul Calibur), и&nbsp;платформерах (Portal, Super Meat Boy, N++), также своим упором на&nbsp;мастерство и&nbsp;освоение механик известны игры от&nbsp;студии From Software.</p>
+<h4 id="Нарратив-и-экспозиция"><a href="#Нарратив-и-экспозиция" class="headerlink" title="Нарратив и экспозиция"></a>Нарратив и&nbsp;экспозиция</h4><p>Часто&nbsp;ли вы&nbsp;играете в&nbsp;игры просто для того, чтобы оставаться внутри игрового мира? Качественно проработанный и&nbsp;кажущийся живым мир&nbsp;&mdash; один из&nbsp;лучших способов удержать игрока. Хорошими примерами в&nbsp;этой категории могут послужить игры серий Uncharted, Last Of&nbsp;Us, Deus Ex, Bioshock, The&nbsp;Wolf Among Us.</p>
+<h4 id="Новизна"><a href="#Новизна" class="headerlink" title="Новизна"></a>Новизна</h4><p>Люди любят новое. Придумать что-то, чего раньше не&nbsp;было, чрезвычайно сложно, а&nbsp;воплотить в&nbsp;качественный геймплей&nbsp;&mdash; еще сложнее. Тем не&nbsp;менее, некоторым это удается: Portal, Stanley Parable, Shadow of&nbsp;the Colossus, AudioSurf, Superhot.</p>
+<h4 id="Поток"><a href="#Поток" class="headerlink" title="Поток"></a>Поток</h4><p>Здесь речь идет о&nbsp;<a href="https://goo.gl/aOkTsh" target="_blank" rel="external">психологическом потоке</a>, который придумал человек по&nbsp;фамилии <del>Чикпык</del> <del>Фифтисент</del> Чиксентмихайи. Такие игры, как Everyday Shooter, N2O, AudioSurf, Crimsonland, Super&nbsp;Hexagon и&nbsp;некоторые сессии оригинального Aliens&nbsp;vs. Predator способны привести игрока в&nbsp;настоящий дзен-транс. Всякий геймер хотя&nbsp;бы раз испытывал это состояние, когда фокус взгляда ослабевает, дыхание замедляется, контроллер в&nbsp;руках исчезает и&nbsp;игрок начинает выполнять сложные игровые действия абсолютно не&nbsp;задумываясь, полностью погрузившись в&nbsp;игру. Создание такой игры с&nbsp;точки зрения геймдизайна&nbsp;&mdash; чрезвычайно сложная задача. По&nbsp;сути, это построение особого собственного ритма в&nbsp;игре, заставляющего игрока действовать все быстрее и&nbsp;быстрее, пока он&nbsp;не&nbsp;начнет действовать быстрее, чем думать. Такой геймплейный опыт неотразим, он&nbsp;раз за&nbsp;разом будет возвращать в&nbsp;игру.</p>
+<p>Играйте в&nbsp;хорошие игры, получайте настоящее удовольствие. <del>А&nbsp;во&nbsp;фритуплей вообще лучше не&nbsp;лезть.</del> Всем чмоки.</p>
 
         </div>
     </div>
@@ -347,7 +270,7 @@
 
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">Теги: </span><br>
-                <a class="tag tag--primary tag--small t-link" href="/tags/GDC/">GDC</a> <a class="tag tag--primary tag--small t-link" href="/tags/игры/">игры</a> <a class="tag tag--primary tag--small t-link" href="/tags/конспекты/">конспекты</a> <a class="tag tag--primary tag--small t-link" href="/tags/сторителлинг/">сторителлинг</a>
+                <a class="tag tag--primary tag--small t-link" href="/tags/геймдизайн/">геймдизайн</a> <a class="tag tag--primary tag--small t-link" href="/tags/гринда/">гринда</a> <a class="tag tag--primary tag--small t-link" href="/tags/психология/">психология</a> <a class="tag tag--primary tag--small t-link" href="/tags/удержание-игрока/">удержание игрока</a> <a class="tag tag--primary tag--small t-link" href="/tags/удовольствие/">удовольствие</a> <a class="tag tag--primary tag--small t-link" href="/tags/ящик-Скиннера/">ящик Скиннера</a>
             </div>
 
         <div class="post-actions-wrap">
@@ -355,7 +278,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/09/16/lego-storytelling-part-2/" data-tooltip="Сторителлинг по принципу LEGO 2">
+                    <a class="post-action-btn btn btn--disabled">
 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">Пред.</span>
@@ -363,7 +286,7 @@
             </li>
             <li class="post-action">
 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/09/21/phenom/" data-tooltip="Отличное кино - Феномен (Phenom)">
 
                     <span class="hide-xs hide-sm text-small icon-mr">След.</span>
                     <i class="fa fa-angle-right"></i>
@@ -378,17 +301,17 @@
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://nachasic.github.io/2016/09/14/lego-storytelling-part-1/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://nachasic.github.io/2016/09/25/hooking-players-attention/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://nachasic.github.io/2016/09/14/lego-storytelling-part-1/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://nachasic.github.io/2016/09/25/hooking-players-attention/">
                 <i class="fa fa-facebook-official"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://nachasic.github.io/2016/09/14/lego-storytelling-part-1/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://nachasic.github.io/2016/09/25/hooking-players-attention/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
@@ -428,7 +351,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/09/16/lego-storytelling-part-2/" data-tooltip="Сторителлинг по принципу LEGO 2">
+                    <a class="post-action-btn btn btn--disabled">
 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">Пред.</span>
@@ -436,7 +359,7 @@
             </li>
             <li class="post-action">
 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/09/21/phenom/" data-tooltip="Отличное кино - Феномен (Phenom)">
 
                     <span class="hide-xs hide-sm text-small icon-mr">След.</span>
                     <i class="fa fa-angle-right"></i>
@@ -451,17 +374,17 @@
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://nachasic.github.io/2016/09/14/lego-storytelling-part-1/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://nachasic.github.io/2016/09/25/hooking-players-attention/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://nachasic.github.io/2016/09/14/lego-storytelling-part-1/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://nachasic.github.io/2016/09/25/hooking-players-attention/">
                 <i class="fa fa-facebook-official"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://nachasic.github.io/2016/09/14/lego-storytelling-part-1/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://nachasic.github.io/2016/09/25/hooking-players-attention/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
@@ -485,17 +408,17 @@
                 <div id="share-options-bar" class="share-options-bar" data-behavior="4">
     <ul class="share-options">
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://nachasic.github.io/2016/09/14/lego-storytelling-part-1/">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https://nachasic.github.io/2016/09/25/hooking-players-attention/">
                 <i class="fa fa-google-plus"></i><span>Поделиться в&nbsp;Google Plus</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://nachasic.github.io/2016/09/14/lego-storytelling-part-1/">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://nachasic.github.io/2016/09/25/hooking-players-attention/">
                 <i class="fa fa-facebook-official"></i><span>Поделиться в&nbsp;Facebook</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://nachasic.github.io/2016/09/14/lego-storytelling-part-1/">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https://nachasic.github.io/2016/09/25/hooking-players-attention/">
                 <i class="fa fa-twitter"></i><span>Поделиться в&nbsp;Twitter</span>
             </a>
         </li>
@@ -688,9 +611,9 @@
 
         <script>
              var disqus_config = function () {
-                 this.page.url = 'https://nachasic.github.io/2016/09/14/lego-storytelling-part-1/';
+                 this.page.url = 'https://nachasic.github.io/2016/09/25/hooking-players-attention/';
                  
-                    this.page.identifier = '2016/09/14/lego-storytelling-part-1/';
+                    this.page.identifier = '2016/09/25/hooking-players-attention/';
                  
              };
             (function() {
