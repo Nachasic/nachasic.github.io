@@ -2130,50 +2130,78 @@
 	}
 }
 @charset "UTF-8";
+/* cyrillic */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
-  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3SZ2oysoEQEeKwjgmXLRnTc.ttf) format("truetype"); }
+  src: local("PT Sans"), local("PTSans-Regular"), url(https://fonts.gstatic.com/s/ptsans/v8/BJVWev7_auVaQ__OU8Qih1KPGs1ZzpMvnHX-7fPOuAc.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
 
+/* latin */
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzJS3E-kSBmtLoNJPDtbj2Pk.ttf) format("truetype"); }
-
-@font-face {
-  font-family: 'Merriweather';
-  font-style: normal;
-  font-weight: 300;
-  src: local("Merriweather Light"), local("Merriweather-Light"), url(https://fonts.gstatic.com/s/merriweather/v13/ZvcMqxEwPfh2qDWBPxn6nrh3fiZvcikGTVJjCHw-q4A.woff) format("woff"); }
-
-@font-face {
-  font-family: 'Merriweather';
+  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
-  src: local("Merriweather"), local("Merriweather-Regular"), url(https://fonts.gstatic.com/s/merriweather/v13/RFda8w1V0eDZheqfcyQ4EAcuEIXEaFWBWXA4NoGd_Oo.woff) format("woff"); }
+  src: local("PT Sans"), local("PTSans-Regular"), url(https://fonts.gstatic.com/s/ptsans/v8/CWlc_g68BGYDSGdpJvpktgLUuEpTyoUstqEm5AMlJo4.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
 
+/* cyrillic */
 @font-face {
-  font-family: 'Merriweather';
+  font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
-  src: local("Merriweather Bold"), local("Merriweather-Bold"), url(https://fonts.gstatic.com/s/merriweather/v13/ZvcMqxEwPfh2qDWBPxn6npuF87MKXtN2rUuZWACTY3w.woff) format("woff"); }
+  src: local("PT Sans Bold"), local("PTSans-Bold"), url(https://fonts.gstatic.com/s/ptsans/v8/g46X4VH_KHOWAAa-HpnGPgsYbbCjybiHxArTLjt7FRU.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
 
+/* latin */
 @font-face {
-  font-family: 'Merriweather';
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local("PT Sans Bold"), local("PTSans-Bold"), url(https://fonts.gstatic.com/s/ptsans/v8/0XxGQsSc1g4rdRdjJKZrNAzyDMXhdD8sAj6OAJTFsBI.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+/* cyrillic */
+@font-face {
+  font-family: 'PT Sans';
   font-style: italic;
-  font-weight: 300;
-  src: local("Merriweather Light Italic"), local("Merriweather-LightItalic"), url(https://fonts.gstatic.com/s/merriweather/v13/EYh7Vl4ywhowqULgRdYwIFemSf_B778MGHtXRm5xTWY.woff) format("woff"); }
+  font-weight: 400;
+  src: local("PT Sans Italic"), local("PTSans-Italic"), url(https://fonts.gstatic.com/s/ptsans/v8/7dSh6BcuqDLzS2qAASIeuoX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
 
+/* latin */
 @font-face {
-  font-family: 'Merriweather';
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local("PT Sans Italic"), local("PTSans-Italic"), url(https://fonts.gstatic.com/s/ptsans/v8/PIPMHY90P7jtyjpXuZ2cLJBw1xU1rKptJj_0jans920.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+/* cyrillic */
+@font-face {
+  font-family: 'PT Sans';
   font-style: italic;
   font-weight: 700;
-  src: local("Merriweather Bold Italic"), local("Merriweather-BoldItalic"), url(https://fonts.gstatic.com/s/merriweather/v13/EYh7Vl4ywhowqULgRdYwIDxxkI94OaAjT-8ypgBSaD8.woff) format("woff"); }
+  src: local("PT Sans Bold Italic"), local("PTSans-BoldItalic"), url(https://fonts.gstatic.com/s/ptsans/v8/lILlYDvubYemzYzN7GbLkBdwxCXfZpKo5kWAx_74bHs.woff2) format("woff2");
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
+
+/* latin */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local("PT Sans Bold Italic"), local("PTSans-BoldItalic"), url(https://fonts.gstatic.com/s/ptsans/v8/lILlYDvubYemzYzN7GbLkBampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+@font-face {
+  font-family: 'Boblic';
+  src: local("Boblic"), url("../fonts/boblic.woff2") format("woff2"), url("../fonts/boblic.woff") format("woff"), url("../fonts/boblic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
 
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Boblic", sans-serif;
   font-size: 10px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -2187,7 +2215,7 @@ body {
   margin: 0;
   padding: 0;
   background: white;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Boblic", sans-serif;
   font-size: 1.6rem;
   line-height: 1.9em;
   letter-spacing: 0.01em;
@@ -2203,7 +2231,7 @@ h4,
 h5,
 h6 {
   letter-spacing: -0.04em;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Boblic", sans-serif;
   font-weight: 700;
   line-height: 1.45em;
   color: #4a4a4a; }
@@ -2762,7 +2790,7 @@ blockquote {
       transform: translate3d(75px, 0, 0); } }
 
 #sidebar {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Boblic", sans-serif;
   height: 100%;
   position: fixed;
   top: 0;
@@ -3559,7 +3587,7 @@ blockquote {
 
 .caption {
   display: block;
-  font-family: "Merriweather", serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 1.3rem;
   color: #81929d;
   text-align: center;
@@ -3784,7 +3812,7 @@ figure.highlight,
     position: absolute;
     bottom: 0;
     width: calc(100% - (1.5em) * 2);
-    font-family: "Open Sans";
+    font-family: "Boblic";
     font-style: italic;
     background: rgba(0, 0, 0, 0.75);
     font-size: 1.3rem;
@@ -3993,7 +4021,7 @@ a.fancybox {
       text-decoration: none; }
   .post .post-meta {
     line-height: 1.5em;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Boblic", sans-serif;
     font-size: 1.3rem;
     font-weight: 400;
     color: #9eabb3; }
@@ -4002,7 +4030,7 @@ a.fancybox {
   .post .post-content {
     text-rendering: optimizelegibility;
     letter-spacing: -0.3px;
-    font-family: "Merriweather", serif;
+    font-family: "PT Sans", sans-serif;
     color: #5d686f;
     margin-top: 20px;
     font-weight: 100;
@@ -4025,15 +4053,22 @@ a.fancybox {
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .post .post-header .post-title {
-    font-size: 3.3rem; } }
+    font-size: 3.3rem; }
+  .post .post-content {
+    font-size: 1.6rem;
+    line-height: 1.9em; } }
 
 @media only screen and (min-width: 1024px) {
   .post .post-header .post-title {
-    font-size: 3.7rem; } }
+    font-size: 3.7rem; }
+  .post .post-content {
+    font-size: 1.7rem;
+    line-height: 1.9em; } }
 
-@media only screen and (min-width: 768px) {
-  .post-content {
-    font-size: 1.7rem; } }
+@media only screen and (max-width: 767px) {
+  .post .post-content {
+    font-size: 1.3rem;
+    line-height: 1.9em; } }
 
 .post-actions-wrap {
   height: 60px;
@@ -4127,7 +4162,7 @@ a.fancybox {
         text-decoration: none; }
     .post-header-cover .post-header .post-meta {
       max-width: 900px;
-      font-family: "Open Sans", sans-serif;
+      font-family: "Boblic", sans-serif;
       font-size: 1.6rem;
       color: white !important;
       font-weight: 400;
@@ -4275,14 +4310,14 @@ a.fancybox {
   .postShorten .postShorten-meta,
   .postShorten .postShorten-readingtime,
   .postShorten .postShorten-excerpt_link {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Boblic", sans-serif;
     font-size: 1.3rem;
     font-weight: 400; }
   .postShorten .postShorten-excerpt,
   .postShorten .postShorten-content {
     text-rendering: optimizelegibility;
     letter-spacing: -0.3px;
-    font-family: "Merriweather", serif;
+    font-family: "PT Sans", sans-serif;
     color: #5d686f;
     font-weight: 100;
     overflow: hidden;
@@ -4540,7 +4575,7 @@ a.tag--small,
   color: #349ef3 !important; }
 
 .font-merryweather {
-  font-family: "Merriweather", serif; }
+  font-family: "PT Sans", sans-serif; }
 
 .tooltip, [data-tooltip] {
   position: relative;
