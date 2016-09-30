@@ -2217,7 +2217,7 @@ body {
   background: white;
   font-family: "Boblic", sans-serif;
   font-size: 1.6rem;
-  line-height: 1.9em;
+  line-height: 1.6em;
   letter-spacing: 0.01em;
   -webkit-font-smoothing: subpixel-antialiased;
   font-smoothing: subpixel-antialiased; }
@@ -2420,7 +2420,7 @@ blockquote {
     #about #about-card #about-card-location,
     #about #about-card #about-card-bio {
       font-size: 1.6rem;
-      line-height: 1.9em;
+      line-height: 1.6em;
       font-weight: 400;
       color: #5d686f; }
 
@@ -3646,7 +3646,7 @@ figure.highlight,
     width: 100%; }
     figure.highlight .code pre,
     .codeblock .code pre {
-      max-width: calc(900px - 50px);
+      max-width: calc(800px - 50px);
       overflow-x: auto;
       overflow-y: hidden; }
   figure.highlight .line,
@@ -3862,7 +3862,7 @@ a.fancybox {
 
 .main-content-wrap {
   display: block;
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
   padding-right: 20px;
   padding-left: 20px; }
@@ -3941,7 +3941,7 @@ a.fancybox {
 .modal {
   width: 100%;
   height: 100%;
-  max-width: 900px;
+  max-width: 800px;
   box-sizing: border-box;
   position: relative;
   margin: 0 auto;
@@ -4056,19 +4056,19 @@ a.fancybox {
     font-size: 3.3rem; }
   .post .post-content {
     font-size: 1.6rem;
-    line-height: 1.9em; } }
+    line-height: 1.6em; } }
 
 @media only screen and (min-width: 1024px) {
   .post .post-header .post-title {
     font-size: 3.7rem; }
   .post .post-content {
     font-size: 1.7rem;
-    line-height: 1.9em; } }
+    line-height: 1.6em; } }
 
 @media only screen and (max-width: 767px) {
   .post .post-content {
     font-size: 1.3rem;
-    line-height: 1.9em; } }
+    line-height: 1.6em; } }
 
 .post-actions-wrap {
   height: 60px;
@@ -4153,7 +4153,7 @@ a.fancybox {
     display: table-cell;
     vertical-align: middle; }
     .post-header-cover .post-header .post-title {
-      max-width: 900px;
+      max-width: 800px;
       margin: 0 auto;
       color: white;
       text-shadow: 0 2px 0 rgba(0, 0, 0, 0.9);
@@ -4161,7 +4161,7 @@ a.fancybox {
       .post-header-cover .post-header .post-title:hover {
         text-decoration: none; }
     .post-header-cover .post-header .post-meta {
-      max-width: 900px;
+      max-width: 800px;
       font-family: "Boblic", sans-serif;
       font-size: 1.6rem;
       color: white !important;
@@ -4593,7 +4593,7 @@ a.tag--small,
     color: #fff;
     content: attr(data-tooltip);
     font-size: 0.93em;
-    line-height: 1.9em;
+    line-height: 1.6em;
     border-radius: 5px; }
   .tooltip:before, [data-tooltip]:before, .tooltip:after, [data-tooltip]:after {
     position: absolute;
